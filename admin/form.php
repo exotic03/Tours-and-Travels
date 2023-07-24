@@ -46,7 +46,7 @@
                 <!-- /.container-fluid -->
 
                 <form action="insertpackage.php" method="post" enctype="multipart/form-data">
-                    <h1>Fill Package Details</h1>
+                    <h2>Fill package Details</h2>
                     <label for="Package Name">Package Name</label>
                     <p><input type="text" name="pname" placeholder="Enter package name" required class="form-control"></p>
                     <label for="Package Price">Package Price</label>
