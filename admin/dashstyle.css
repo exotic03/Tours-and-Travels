@@ -1,0 +1,39 @@
+.dash{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.addproduct{
+    border: 2px solid #072ac8;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.dash p{
+    font-size: 1.5rem;
+    color: #072ac8;
+    align-items: center;
+    margin-top: 5px;
+}
+.packages{
+    border: 2px solid #072ac8;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+.dash i{
+    color: #072ac8;
+    font-size: 1.8rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: #072ac8;
+}

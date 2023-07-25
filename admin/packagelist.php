@@ -78,6 +78,7 @@
       <!-- End of Main Content -->
       <!-- Footer -->
       <?php include("include/footer.php") ?>
+      <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

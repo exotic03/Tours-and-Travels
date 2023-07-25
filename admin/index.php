@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="dashstyle.css">
 
 </head>
 
@@ -45,10 +46,22 @@
                 
                 <!-- /.container-fluid -->
 
+                <h2>Dashboard</h2>
+                <div class="dash">
+                <div class="addproduct">
+                    <p>Add Package</p>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+                <div class="packages">
+                    <p>Packages</p>
+                </div>
+                </div>
+
             </div>
             <!-- End of Main Content -->
             <!-- Footer -->
             <?php include("include/footer.php") ?>
+            <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
