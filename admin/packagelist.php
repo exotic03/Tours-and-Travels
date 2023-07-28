@@ -19,6 +19,7 @@
 
   <!-- Custom styles for this template-->
   <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="liststyle.css">
 
 </head>
 
@@ -43,6 +44,18 @@
 
         <!-- Begin Page Content -->
 
+                      <form action="search.php" method="GET"
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" id="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search Package Details .."
+                                aria-label="Search" aria-describedby="basic-addon2" id="search-input" name="search" required>
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
         <!-- /.container-fluid -->
         <table class="table table-success table-striped">
           <thead>

@@ -1,0 +1,10 @@
+#search{
+    display: flex !important;
+    justify-content: center !important;
+    margin-bottom: 40px !important;
+}
+#search-input{
+    background-color: #ecf8f8 !important;
+    width: 400px !important;
+    height: 50px !important;
+}
