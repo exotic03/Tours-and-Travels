@@ -74,7 +74,7 @@
                                         <td><?php echo $line['package_name'] ?></td>
                                         <td><?php echo $line['package_price'] ?></td>
                                         <td><?php echo $line['day'] ?></td>
-                                        <td><?php echo $line['package_image'] ?></td>
+                                        <td><img src="package images/<?php echo $line['package_image']; ?>" style="width: 120px;" alt=""></td>
                                         <td><?php echo $line['category'] ?></td>
                                         <td><?php echo $line['location'] ?></td>
                                         </tr>
