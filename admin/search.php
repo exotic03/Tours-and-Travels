@@ -62,7 +62,7 @@
                         <tbody>
                             <?php 
                             $connect=mysqli_connect("localhost","root","","tour_and_travels");
-                            if(isset($_GET['search'])){
+                            if(isset($_GET['search']) && ($_GET['search'])!=""){
                                 $search_value=$_GET['search'];
                                 $query="SELECT * FROM package_info WHERE CONCAT(package_name,package_price,day,category,location) LIKE '%$search_value%'";
                                 $result=mysqli_query($connect,$query);
@@ -84,7 +84,7 @@
                                 else{
                                     ?>
                                         <tr>
-                                            <td colspan="6">No record fund</td>
+                                            <td colspan="6">No record found</td>
                                         </tr>
                                     <?php
                                 }
