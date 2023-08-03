@@ -82,6 +82,7 @@
               <td><img src="package images/<?php echo $line['package_image']; ?>" style="width: 120px;" alt=""></td>
               <td><?php echo $line['category'] ?></td>
               <td><?php echo $line['location'] ?></td>
+              <td><a href="delete.php?id=<?php echo $line['id'];?>" class="btn btn-danger" onclick="return confirm('Are you want to delete this data ?');"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
             <?php
             } ?>
