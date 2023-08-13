@@ -66,6 +66,8 @@
               <th scope="col">Package Image</th>
               <th scope="col">Category</th>
               <th scope="col">Location</th>
+              <th scope="col">Package Description</th>
+              <th scope="col">Delete</th>
             </tr>
           </thead>
           <tbody>
@@ -82,6 +84,7 @@
               <td><img src="package images/<?php echo $line['package_image']; ?>" style="width: 120px;" alt=""></td>
               <td><?php echo $line['category'] ?></td>
               <td><?php echo $line['location'] ?></td>
+              <td><?php echo $line['package_desc'] ?></td>
               <td><a href="delete.php?id=<?php echo $line['id'];?>" class="btn btn-danger" onclick="return confirm('Are you want to delete this data ?');"><i class="fa-solid fa-trash-can"></i></a></td>
             </tr>
             <?php

@@ -57,6 +57,7 @@
                                 <th scope="col">Package Image</th>
                                 <th scope="col">Category</th>
                                 <th scope="col">Location</th>
+                                <th scope="col">Package Description</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -77,6 +78,7 @@
                                         <td><img src="package images/<?php echo $line['package_image']; ?>" style="width: 120px;" alt=""></td>
                                         <td><?php echo $line['category'] ?></td>
                                         <td><?php echo $line['location'] ?></td>
+                                        <td><?php echo $line['package_desc'] ?></td>
                                         </tr>
                                         <?php
                                     }

@@ -65,16 +65,21 @@
                     <br>
                     <label for="location">Package Location</label>
                     <p><input type="text" name="location" placeholder="Enter location" required class="form-control"></p>
-                    <button type="submit">Submit Package</button>
+                    <label for="desc">Package Description</label>
+                    <textarea name="desc" id="desc" cols="30" rows="10" class="form-control"></textarea>
+                    <input type="submit" value="Submit Package">
                 </form>
 
             </div>
             <!-- End of Main Content -->
             <!-- Footer -->
             <?php include("include/footer.php") ?>
+           
+            <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+            <script>
+                CKEDITOR.replace('desc');
+            </script>
             <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
-            
-
 </body>
 
 </html>
