@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
+    header("location:login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +25,7 @@
 
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dashstyle.css">
+    <link rel="stylesheet" href="css files/dashstyle.css">
 
 </head>
 
