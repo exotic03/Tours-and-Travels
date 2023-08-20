@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    flex-direction: column;
 }
 .addproduct{
     border: 2px solid #072ac8;

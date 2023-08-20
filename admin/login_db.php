@@ -1,8 +1,10 @@
 <?php
  session_start();
  $connect=mysqli_connect("localhost","root","","tour_and_travels");
- extract($_POST);
- $sel="SELECT * FROM admin_table WHERE (email=$uemail OR username=$uemail) AND pass=$pass";
+ $email=$_POST['email'];
+ $user=$_POST['user'];
+ $pass=$_POST['pass'];
+ $sel="SELECT * FROM admin_table WHERE email='$email' AND username='$user' AND pass='$pass'";
  $result=$connect->query($sel);
     if($result->num_rows>0){
         while($row=$result->fetch_assoc()){

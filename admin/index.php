@@ -15,7 +15,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -51,6 +51,15 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
                 <!-- Begin Page Content -->
                 
                 <!-- /.container-fluid -->
+                <p style="color:#000; text-align:center; font-size:2rem;">
+                    <b>
+                        Welcome
+                        <?php
+                        $admin=$_SESSION['adminuser'];
+                        echo $admin;
+                        ?>
+                    </b>
+                </p>
 
                 <h2>Dashboard</h2>
                 <div class="dash">

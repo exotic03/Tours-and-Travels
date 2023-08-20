@@ -45,6 +45,7 @@
                                 </form>
                             </div>
                         </li>
+                        <li style="margin-top:15px"><a href="logout.php" class="btn btn-danger">LOGOUT<i class="fa-solid fa-arrow-right-from-bracket" style="padding-left:20px"></i></a></li>
 
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
