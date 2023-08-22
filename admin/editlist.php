@@ -74,14 +74,14 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
                     <br>
                     <select name="category" class="form-control">
                         <option value="">Select Category</option>
-                        <option value="<?php echo $line['category']?>">Standard</option>
-                        <option value="<?php echo $line['category']?>">Premium</option>
+                        <option value="standard" <?php if($line['category']=='standard'){echo "selected";} ?>>Standard</option>
+                        <option value="premium" <?php if($line['category']=='premium'){echo "selected";} ?>>Premium</option>
                     </select>
                     <br>
                     <label for="location">Package Location</label>
                     <p><input type="text" name="location" placeholder="Enter location" required class="form-control" value="<?php echo $line['location'] ?>"></p>
                     <label for="desc">Package Description</label>
-                    <textarea name="desc" id="desc" cols="30" rows="10" class="form-control" value="<?php echo $line['package_desc'] ?>"></textarea>
+                    <textarea name="desc" id="desc" cols="30" rows="10" class="form-control"><?php echo $line['package_desc']; ?></textarea>
                     <input type="submit" value="Submit Package">
                 </form>
                 <?php
