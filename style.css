@@ -76,9 +76,9 @@ nav{
     text-decoration: none;
 }
 .main-nav .navlinks ul li .pbtn:hover{
-    background-color: #cfdbd5;
+    background-color: #edf2fb;
     color: #011627;
-    border: 2px solid #cfdbd5;
+    border: 2px solid #edf2fb;
 }
 .main-nav .navlinks ul li .sbtn:hover{
     background-color: #edf6f9;
