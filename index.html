@@ -22,8 +22,8 @@
                     <li><a href="#" class="links">About us</a></li>
                     <li><a href="#" class="links">Packages</a></li>
                     <li><a href="#" class="links">Offers</a></li>
-                    <li><a href="#" class="sbtn">Log in</a></li>
-                    <li><a href="#" class="pbtn">Sign up</a></li>
+                    <li><a href="#" class="sbtn" data-bs-toggle="modal" data-bs-target="#loginsection">Log in</a></li>
+                    <li><a href="#" class="pbtn" >Sign up</a></li>
                   </ul>
             </div>
         </div>
@@ -278,8 +278,31 @@
             <a href="#">RED BUS</a> 
           </div>
         </footer>
+        <div class="modal" tabindex="-1" id="loginsection">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-transparent border-0">
+              <div class="modal-body">
+                  <div class="main">
+                      <div class="img"></div>
+                      <div class="loginform">
+                          <h1>Admin Panel Login</h1>
+                          <form action="index.html">
+                              <h4>Email</h4>
+                              <input type="text" name="email" placeholder="Enter your Email or Username" class="input" >
+                              <h4>Username</h4>
+                              <input type="text" name="user" placeholder="Enter your Email or Username" class="input" >
+                              <h4>Password</h4>
+                              <input type="password" name="pass" placeholder="Enter your password" class="input">
+                              <p><input type="submit" value="LOGIN" class="log"></p>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
