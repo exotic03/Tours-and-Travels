@@ -101,3 +101,8 @@ gsap.from(".c7",{
         scrub:2
     }
 });
+let search=document.getElementById("search");
+let as=document.getElementById("animatesearch");
+search.addEventListener('click',()=>{
+    as.remove();
+});

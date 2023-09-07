@@ -112,6 +112,7 @@ nav{
     border-color: aliceblue;
     border-radius:50px;
     padding:10px 10px;
+    position: relative;
 }
 .search-bar input{
     background: transparent;
@@ -121,9 +122,33 @@ nav{
     padding: 10px 20px;
     font-size: 20px;
     color: #fff ;
+    z-index: 10;
 }
-.search-bar input::placeholder{
+.search-bar span{
+    position: absolute;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.search-bar span p{
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.5rem;
     color: #fff;
+    width: 0;
+    animation: typing 1.5s steps(30) infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
 .search-bar button{
     border: 0;
