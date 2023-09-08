@@ -42,7 +42,7 @@ nav{
 .main-nav .navlinks ul{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
 }
 .main-nav .navlinks ul li{
@@ -83,6 +83,14 @@ nav{
 .main-nav .navlinks ul li .sbtn:hover{
     background-color: #edf6f9;
     color: #011627;
+}
+.toggle-btn{
+    display: none;
+}
+.main-nav .toggle-btn i {
+    font-size: 2.2rem;
+    color: #fff;
+    display: none;
 }
 .search-section{
     display: flex;

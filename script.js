@@ -106,3 +106,9 @@ let as=document.getElementById("animatesearch");
 search.addEventListener('click',()=>{
     as.remove();
 });
+
+const togglebtn=document.getElementById("toggle-btn");
+const navlink=document.getElementById("navlinks");
+togglebtn.addEventListener('click',()=>{
+    navlink.classList.toggle('active');
+})
