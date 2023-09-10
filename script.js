@@ -111,4 +111,4 @@ const togglebtn=document.getElementById("toggle-btn");
 const navlink=document.getElementById("navlinks");
 togglebtn.addEventListener('click',()=>{
     navlink.classList.toggle('active');
-})
+});
