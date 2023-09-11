@@ -540,6 +540,46 @@ footer .footer-links {
     footer h1 {
         font-size: 2rem;
     }
+    .main{
+        height: 500px;
+    }
+    .loginform h1{
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+    .loginform .input{
+        width: 200px;
+    }
+    .loginform form h4{
+        font-size: 1rem;
+    }
+    .loginform form .log{
+        width: 200px;
+        margin-top: 30px;
+    }   
+    .rmain{
+        height: 600px;
+    }
+    .rmain .img{
+        width: 45%;
+    }
+    .signupform{
+        width: 55%;
+    }
+    .signupform h1{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .signupform .input{
+        width: 200px;
+        font-size: 0.9rem;
+    }
+    .signupform form h4{
+         font-size: 1rem;   
+    }
+    .signupform form .log{
+        width: 200px;
+    }
 }
 
 @media (max-width:900px) {
@@ -681,6 +721,41 @@ footer .footer-links {
         width: 30px;
         height: 30px;
     }
+    .main .img{
+        width: 45%;
+    }
+    .loginform {
+        width: 55%;
+    }
+    .loginform h1{
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+    .loginform .input{
+        width: 170px;
+        font-size: 0.7rem;
+    }
+    .loginform form h4{
+        font-size: 0.8rem;
+    }
+    .loginform form .log{
+        width: 160px;
+        font-size: 1rem;
+    }
+    .signupform h1{
+        font-size: 1rem;
+    }
+    .signupform .input{
+        width: 170px;
+        font-size: 0.7rem;
+    }
+    .signupform form h4{
+         font-size: 0.8rem;   
+    }
+    .signupform form .log{
+        width: 170px;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:375px) {
@@ -730,5 +805,43 @@ footer .footer-links {
 
     .search-bar span p {
         font-size: 0.7rem;
+    }
+    .main .img{
+        display: none;
+    }
+    .loginform h1{
+        font-size: 1rem;
+    }
+    .loginform .input{
+        width: 150px;
+        font-size: 0.6rem;
+    }
+    .loginform form h4{
+        font-size: 0.7rem;
+    }
+    .loginform form .log{
+        width: 150px;
+        font-size: 1rem;
+    }
+    .rmain{
+        width: 100%;
+        justify-content: center;
+    }
+    .rmain .img{
+        display: none;
+    }
+    .signupform h1{
+        font-size: 1rem;
+    }
+    .signupform .input{
+        width: 150px;
+        font-size: 0.6rem;
+    }
+    .signupform form h4{
+         font-size: 0.7rem;   
+    }
+    .signupform form .log{
+        width: 150px;
+        font-size: 1rem;
     }
 }

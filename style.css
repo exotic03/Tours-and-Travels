@@ -316,6 +316,7 @@ footer .footer-links{
     width: 250px;
     border-radius: 7px;
     padding-left: 20px;
+    padding-right: 10px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
@@ -389,6 +390,7 @@ footer .footer-links{
     width: 250px;
     border-radius: 7px;
     padding-left: 20px;
+    padding-right: 10px;
     font-family: 'Poppins', sans-serif;
 }
 .signupform form h4{
@@ -447,6 +449,46 @@ footer .footer-links{
     }
     footer h1{
         font-size: 2rem;
+    }
+    .main{
+        height: 500px;
+    }
+    .loginform h1{
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+    .loginform .input{
+        width: 200px;
+    }
+    .loginform form h4{
+        font-size: 1rem;
+    }
+    .loginform form .log{
+        width: 200px;
+        margin-top: 30px;
+    }   
+    .rmain{
+        height: 600px;
+    }
+    .rmain .img{
+        width: 45%;
+    }
+    .signupform{
+        width: 55%;
+    }
+    .signupform h1{
+        font-size: 1.5rem;
+        margin-bottom: 0px;
+    }
+    .signupform .input{
+        width: 200px;
+        font-size: 0.9rem;
+    }
+    .signupform form h4{
+         font-size: 1rem;   
+    }
+    .signupform form .log{
+        width: 200px;
     }
 }
 @media (max-width:891px){
@@ -539,6 +581,41 @@ footer .footer-links{
     .shead{
         font-size: 1.8rem !important;
     }
+    .main .img{
+        width: 45%;
+    }
+    .loginform {
+        width: 55%;
+    }
+    .loginform h1{
+        font-size: 1rem;
+        margin-top: 40px;
+    }
+    .loginform .input{
+        width: 170px;
+        font-size: 0.7rem;
+    }
+    .loginform form h4{
+        font-size: 0.8rem;
+    }
+    .loginform form .log{
+        width: 160px;
+        font-size: 1rem;
+    }
+    .signupform h1{
+        font-size: 1rem;
+    }
+    .signupform .input{
+        width: 170px;
+        font-size: 0.7rem;
+    }
+    .signupform form h4{
+         font-size: 0.8rem;   
+    }
+    .signupform form .log{
+        width: 170px;
+        font-size: 1rem;
+    }
 }
 @media (max-width:401px){
     .shead{
@@ -572,5 +649,40 @@ footer .footer-links{
 @media (max-width:320px){
     .content .card-container .cards:nth-child(2){
         display: none;
+    }
+    .main .img{
+        display: none;
+    }
+    .loginform h1{
+        font-size: 1rem;
+    }
+    .loginform .input{
+        width: 150px;
+        font-size: 0.6rem;
+    }
+    .loginform form h4{
+        font-size: 0.7rem;
+    }
+    .loginform form .log{
+        width: 150px;
+        font-size: 1rem;
+    }
+    .rmain{
+        width: 100%;
+        justify-content: center;
+    }
+    .signupform h1{
+        font-size: 1rem;
+    }
+    .signupform .input{
+        width: 150px;
+        font-size: 0.6rem;
+    }
+    .signupform form h4{
+         font-size: 0.7rem;   
+    }
+    .signupform form .log{
+        width: 150px;
+        font-size: 1rem;
     }
 }
