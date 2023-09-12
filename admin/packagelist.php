@@ -69,7 +69,9 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
               <th scope="col">Package Name</th>
               <th scope="col">Package Price</th>
               <th scope="col">Day</th>
+              <th scope="col">Night</th>
               <th scope="col">Package Image</th>
+              <th scope="col">Classification</th>
               <th scope="col">Category</th>
               <th scope="col">Location</th>
               <th scope="col">Package Description</th>
@@ -88,7 +90,9 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
               <td><?php echo $line['package_name'] ?></td>
               <td><?php echo $line['package_price'] ?></td>
               <td><?php echo $line['day'] ?></td>
+              <td><?php echo $line['night'] ?></td>
               <td><img src="package images/<?php echo $line['package_image']; ?>" style="width: 120px;" alt=""></td>
+              <td><?php echo $line['classification'] ?></td>
               <td><?php echo $line['category'] ?></td>
               <td><?php echo $line['location'] ?></td>
               <td><?php echo $line['package_desc'] ?></td>

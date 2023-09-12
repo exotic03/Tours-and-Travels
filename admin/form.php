@@ -59,8 +59,12 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
                     <p><input type="text" name="price" placeholder="Enter package price" required class="form-control"></p>
                     <label for="Day">Day of package</label>
                     <p><input type="number" name="day" placeholder="Enter day of package" required class="form-control"></p>
+                    <label for="Day">Night of package</label>
+                    <p><input type="number" name="night" placeholder="Enter night of package" required class="form-control"></p>
                     <label for="">Image for Package</label>
                     <p><input type="file" name="pimg" class="form-control"></p>
+                    <label for="Day">Package Classification</label>
+                    <p><input type="text" name="clf" placeholder="Enter classification of package" required class="form-control"></p>
                     <label for="category">Package Category</label>
                     <br>
                     <select name="category" class="form-control">
