@@ -89,6 +89,8 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
                                         <td><?php echo $line['category'] ?></td>
                                         <td><?php echo $line['location'] ?></td>
                                         <td><?php echo $line['package_desc'] ?></td>
+                                        <td><a href="editlist.php?id=<?php echo $line['id'];?>" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a></td>
+                                        <td><a href="delete.php?id=<?php echo $line['id'];?>" class="btn btn-danger" onclick="return confirm('Are you want to delete this data ?');"><i class="fa-solid fa-trash-can"></i></a></td>
                                         </tr>
                                         <?php
                                     }

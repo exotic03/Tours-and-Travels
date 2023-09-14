@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="summerstyle.css">
-  <title>Summer Packages</title>
+  <link rel="stylesheet" href="monsoonpackstyle.css">
+  <title>Monsoon Packages</title>
 </head>
 
 <body>
@@ -30,21 +30,21 @@
     </div>
   </nav>
   <div class="header-img">
-    <h1>Summer Packages</h1>
+    <h1>Monsoon Packages</h1>
     <form action="##" class="search-bar">
       <input type="text" name="q" id="search">
       <span id="animatesearch">
-        <p>Search Your Summer Packages</p>
+        <p>Search Your Monsoon Packages</p>
       </span>
       <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
   </div>
 
-  <h1 id="head">Summer Destinations</h1>
+  <h1 id="head">Monsoon Destinations</h1>
   <div class="all-products container">
     <?php
             $connect=mysqli_connect("localhost","root","","tour_and_travels");
-            $row="SELECT * FROM package_info where classification='Summer Destination'";
+            $row="SELECT * FROM package_info where classification='Monsoon Destination'";
             $res=$connect->query($row);
             while($line=$res->fetch_assoc()){
             ?>
