@@ -59,30 +59,13 @@ nav{
     color: #011627;
     border-bottom: 2px solid #011627;
 }
-.main-nav .navlinks ul li .pbtn{
+.main-nav .navlinks ul li .profile i {
+    font-size: 1.5rem;
     color: #fff;
-    padding: 12px 24px;
-    border-radius: 10px;
     transition: all 0.3s ease-in;
-    text-decoration: none;
-    border: 2px solid #fff;
 }
-.main-nav .navlinks ul li .sbtn{
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in;
-    border: 2px solid #fff;
-    text-decoration: none;
-}
-.main-nav .navlinks ul li .pbtn:hover{
-    background-color: #edf2fb;
-    color: #011627;
-    border: 2px solid #edf2fb;
-}
-.main-nav .navlinks ul li .sbtn:hover{
-    background-color: #edf6f9;
-    color: #011627;
+.main-nav .navlinks ul li .profile i:hover{
+    color: #003;
 }
 .toggle-btn {
     display: none;

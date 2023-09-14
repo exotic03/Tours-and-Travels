@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="homestyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Tours and Travels</title>
+  <title>Tours and Travels Home Page</title>
 </head>
 
 <body>
@@ -23,8 +23,7 @@
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
-          <li><a href="#" class="sbtn" data-bs-toggle="modal" data-bs-target="#loginsection">Log in</a></li>
-          <li><a href="#" class="pbtn" data-bs-toggle="modal" data-bs-target="#signupsection">Sign up</a></li>
+          <li><a href="#" class="profile"><i class="fa-solid fa-user"></i></a></li>
         </ul>
       </div>
       <div href="#" class="toggle-btn" id="toggle-btn"><i class="fa-solid fa-bars"></i></div>
@@ -294,13 +293,13 @@
             <div class="img"></div>
             <div class="loginform">
               <h1>Login</h1>
-              <form action="userlogin.php" method="post">
+              <form action="index.html">
                 <h4>Email</h4>
-                <input type="email" name="email" placeholder="Enter your Email" class="input" autocomplete="off">
+                <input type="text" name="email" placeholder="Enter your Email" class="input">
                 <h4>Username</h4>
-                <input type="text" name="user" placeholder="Enter your Username" class="input" autocomplete="off">
+                <input type="text" name="user" placeholder="Enter your Username" class="input">
                 <h4>Password</h4>
-                <input type="password" name="pass" placeholder="Enter your password" class="input" autocomplete="off">
+                <input type="password" name="pass" placeholder="Enter your password" class="input">
                 <p><input type="submit" value="LOGIN" class="log"></p>
               </form>
             </div>
@@ -317,13 +316,13 @@
             <div class="img"></div>
             <div class="signupform">
               <h1>Register</h1>
-              <form action="usersignup.php" method="post">
+              <form action="index.html">
                 <h4>Full Name</h4>
-                <input type="text" name="name" placeholder="Enter your name" class="input" autocomplete="off">
+                <input type="text" name="email" placeholder="Enter your name" class="input" autocomplete="off">
                 <h4>Email Address</h4>
-                <input type="email" name="email" placeholder="Enter your Email address" class="input" autocomplete="off">
+                <input type="text" name="email" placeholder="Enter your Email address" class="input" autocomplete="off">
                 <h4>Create Username</h4>
-                <input type="text" name="username" placeholder="Create your Username" class="input" autocomplete="off">
+                <input type="text" name="user" placeholder="Create your Username" class="input" autocomplete="off">
                 <h4>Create Password</h4>
                 <input type="password" name="pass" placeholder="Create your password" class="input" autocomplete="off">
                 <h4>Confirm Password</h4>
