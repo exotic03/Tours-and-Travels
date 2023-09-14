@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #caf0f8;
+}
+
+nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.main-nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+}
+
+.main-nav .logo img {
+    width: 80px;
+    height: 70px;
+}
+
+.main-nav .logo #homelink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Borel', cursive;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    color: #fff;
+}
+
+.main-nav .navlinks ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.main-nav .navlinks ul li {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.main-nav .navlinks ul li .links {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-nav .navlinks ul li .links:hover {
+    color: #011627;
+    border-bottom: 2px solid #011627;
+}
+.main-nav .navlinks ul li .profile i {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+.main-nav .navlinks ul li .profile i:hover{
+    color: #003;
+}
+
+.toggle-btn {
+    display: none;
+    text-decoration: none;
+}
+
+.main-nav .toggle-btn i {
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.header-img {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url("../image\ assets/summerback.jpg");
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header-img h1 {
+    font-family: 'Lobster Two', cursive;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.search-bar {
+    width: 80%;
+    max-width: 700px;
+    background: rgb(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-color: aliceblue;
+    border-radius: 50px;
+    padding: 10px 10px;
+    position: relative;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    z-index: 10;
+}
+
+.search-bar span {
+    position: absolute;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.search-bar span p {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 0;
+    animation: typing 1.5s steps(30) infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.header-img form button i {
+    color: black !important;
+    font-size: 1.2rem;
+}
+
+#head {
+    color: #011627;
+    font-family: 'Borel', cursive;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 2.9rem;
+}
+
+.all-products {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.products {
+    overflow: hidden;
+    background: #edf6f9;
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 20px 10px 10px 10px;
+    gap: 10px;
+}
+
+.products:hover {
+    box-shadow: 1px 1px 10px #011627;
+}
+
+.products img {
+    height: 45%;
+    width: 260px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.products:hover img {
+    scale: 1.1;
+}
+
+.product-info {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .product-info .product-title {
+    text-align: center;
+    color: #011627;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.products .product-info .product-places {
+    text-align: center;
+    color: #011627;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.products .product-info .product-price {
+    text-align: center;
+    color: #011627;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+}
+
+.products .product-info .product-btn {
+    text-decoration: none;
+    background-color: #9381ff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.products .product-info .product-btn:hover {
+    background-color: #03045e;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: #edf2fb;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer h1 {
+    font-family: 'Borel', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+footer .footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-links a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #011627;
+    text-align: center;
+}
+
+.footer-links a:hover {
+    color: #03045e;
+}
+@media (max-width:1074px) {
+    .main-nav .logo #homelink {
+        font-size: 1rem;
+    }
+
+    .main-nav .navlinks ul {
+        gap: 15px;
+    }
+
+    .main-nav .navlinks ul li {
+        font-size: 1rem;
+    }
+
+    .products {
+        width: 300px;
+    }
+
+    .products img {
+        width: 270px;
+    }
+}
+
+@media (max-width:993px) {
+    .main-nav .navlinks ul {
+        gap: 10px;
+    }
+
+    footer h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:900px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .main-nav .toggle-btn i {
+        margin-right: 20px;
+    }
+
+    .navlinks {
+        position: absolute;
+        background-color: #788bff;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 30px;
+        transition: 0.2s ease-in-out;
+        z-index: 100;
+    }
+
+    .navlinks.active {
+        left: 0;
+    }
+
+    .main-nav .navlinks ul {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header-img {
+        height: 500px;
+    }
+
+    .header-img h1 {
+        font-size: 3.5rem;
+    }
+
+    .search-bar {
+        width: 70%;
+    }
+
+    #head {
+        font-size: 2.5rem;
+    }
+
+    .products {
+        width: 250px;
+        padding: 20px 10px 10px 10px;
+    }
+
+    .products img {
+        width: 220px;
+        height: 35%;
+    }
+
+    .product-info {
+        height: 60%;
+    }
+
+    footer h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .header-img h1 {
+        font-size: 2.5rem;
+    }
+
+    .search-bar {
+        width: 400px;
+    }
+
+    .search-bar span p {
+        font-size: 1rem;
+    }
+
+    #head {
+        font-size: 1.7rem;
+    }
+
+    .products {
+        width: 250px;
+    }
+
+    .products img {
+        width: 220px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 550px;
+    }
+
+    footer h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .footer-links h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:522px) {
+    .search-bar input {
+        font-size: 1rem;
+    }
+
+    .search-bar button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width:460px) {
+    .search-bar {
+        width: 300px;
+    }
+
+    .search-bar span p {
+        font-size: 0.8rem;
+    }
+
+    .search-bar button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:375px) {
+    .main-nav .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .main-nav .logo #homelink {
+        font-size: 1rem;
+    }
+
+    .header-img h1 {
+        font-size: 2rem;
+    }
+
+    .search-bar {
+        width: 280px;
+    }
+
+    .search-bar button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width:320px) {
+    .main-nav .logo #homelink {
+        font-size: 0.8rem;
+    }
+
+    .main-nav .toggle-btn i {
+        font-size: 1.5rem;
+    }
+
+    .search-bar {
+        width: 250px;
+    }
+
+    .header-img form button i {
+        font-size: 0.8rem;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .search-bar span p {
+        font-size: 0.7rem;
+    }
+}
