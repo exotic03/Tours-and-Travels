@@ -19,7 +19,7 @@
       </div>
       <div class="navlinks" id="navlinks">
         <ul>
-          <li><a href="#" class="links">Home</a></li>
+          <li><a href="../home.html" class="links">Home</a></li>
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
@@ -32,15 +32,45 @@
   <div class="header-img">
     <h1>Winter Packages</h1>
     <form action="##" class="search-bar">
-      <input type="text" name="q" id="search">
+      <input type="text" name="search_data" id="search">
       <span id="animatesearch">
         <p>Search Your Winter Packages</p>
       </span>
-      <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button type="submit" name="search"><i class="fa-solid fa-magnifying-glass"></i></button>
     </form>
   </div>
 
   <h1 id="head">Winter Destinations</h1>
+  <?php
+  $connect=mysqli_connect("localhost","root","","tour_and_travels");
+  if(isset($_GET['search'])){
+    $search_value=$_GET['search_data'];
+    $sel="SELECT * FROM package_info where classification='Winter Destination' AND package_name LIKE '%$search_value%'";
+    $result=mysqli_query($connect,$sel);?>
+    <h2 class="container" style="color: #011627;">Showing results regarding <?php echo $search_value ?> </h2>
+    <div class="all-products container">
+      <?php
+      if(mysqli_num_rows($result)>0){
+        foreach($result as $data){
+          ?>
+          <div class="products">
+            <img src="../admin/package images/<?php echo $data['package_image']; ?>">
+            <div class="product-info">
+              <h4 class="product-title"><?php echo $data['package_name']?></h4>
+              <p class="product-places"><?php echo $data['location'] ?></p>
+              <p class="product-price">₹ <?php echo $data['package_price'] ?></p>
+              <a class="product-btn" href="#">Explore</a>
+            </div>
+          </div>
+          <?php
+        }
+      }else{
+        ?>
+          <h3 class="danger">No Package Found</h3>                         
+        <?php
+      }
+  }else{
+  ?>
   <div class="all-products container">
     <?php
             $connect=mysqli_connect("localhost","root","","tour_and_travels");
@@ -58,7 +88,8 @@
       </div>
     </div>
     <?php
-            }
+        }
+      }
     ?>
     
   </div>
