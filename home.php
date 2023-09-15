@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
+    header("location:index.html");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -6,5 +6,5 @@ $username=$_POST['username'];
 $upass=$_POST['pass'];
 $user_insert="INSERT INTO user_table SET name='$uname',email='$uemail',username='$username',user_pass='$upass'";
 $connect->query($user_insert);
-header("location:home.html");
+header("location:home.php");
 ?>

@@ -19,7 +19,7 @@
       </div>
       <div class="navlinks" id="navlinks">
         <ul>
-          <li><a href="../home.html" class="links">Home</a></li>
+          <li><a href="../home.php" class="links">Home</a></li>
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
