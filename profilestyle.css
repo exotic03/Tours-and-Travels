@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #fff;
+}
+.upper-section{
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+.profile-avatar{
+    margin: 60px 20px 20px 60px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #38b000;
+}
+.profile-avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.upper-section h1{
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    margin-left: 15px;
+    font-weight: 900;
+    color: #011627;
+}
+.middle-section{
+    display: flex;
+    padding-block: 20px;
+    gap: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.options{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(30deg,#fb5607,#ffbe0b);
+    overflow: hidden;
+    border-radius: 20px;
+}
+.options h1{
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    text-align: center;
+    top: 45%;
+    left: 10%;
+    color: #fff;
+}
+.options:nth-child(2){
+    background: linear-gradient(30deg,#00b4d8,#90e0ef);
+}
+.options:nth-child(2) h1{
+    left: 20%;
+    font-size: 1.7rem;
+}
+.options:nth-child(3){
+    background: linear-gradient(30deg,#bf0603,#8d0801);
+}
+.options:nth-child(3) h1{
+    left: 30%;
+    font-size: 2rem;
+}
