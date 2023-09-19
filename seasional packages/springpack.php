@@ -59,7 +59,7 @@
               <h4 class="product-title"><?php echo $data['package_name']?></h4>
               <p class="product-places"><?php echo $data['location'] ?></p>
               <p class="product-price">₹ <?php echo $data['package_price'] ?></p>
-              <a class="product-btn" href="#">Explore</a>
+              <a class="product-btn" href="#">Book Now</a>
             </div>
           </div>
           <?php
@@ -84,7 +84,7 @@
         <h4 class="product-title"><?php echo $line['package_name']?></h4>
         <p class="product-places"><?php echo $line['location'] ?></p>
         <p class="product-price">₹ <?php echo $line['package_price'] ?></p>
-        <a class="product-btn" href="#">Explore</a>
+        <a class="product-btn" href="#">Book Now</a>
       </div>
     </div>
     <?php
