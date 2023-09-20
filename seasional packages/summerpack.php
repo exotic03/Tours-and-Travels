@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
+    header("location:../index.html");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,7 +66,7 @@
               <h4 class="product-title"><?php echo $data['package_name']?></h4>
               <p class="product-places"><?php echo $data['location'] ?></p>
               <p class="product-price">₹ <?php echo $data['package_price'] ?></p>
-              <a class="product-btn" href="#">Book Now</a>
+              <a class="product-btn" href="../order_details.php?id=<?php echo $line['id'];?>">Book Now</a>
             </div>
           </div>
           <?php
@@ -84,7 +91,7 @@
         <h4 class="product-title"><?php echo $line['package_name']?></h4>
         <p class="product-places"><?php echo $line['location'] ?></p>
         <p class="product-price">₹ <?php echo $line['package_price'] ?></p>
-        <a class="product-btn" href="#">Book Now</a>
+        <a class="product-btn" href="../order_details.php?id=<?php echo $line['id'];?>">Book Now</a>
       </div>
     </div>
     <?php

@@ -9,17 +9,23 @@ html,body{
     width: 100%;
     height: 100%;
 }
-body{
-    background-color: #fff;
+.back{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image\ assets/profile\ back\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .upper-section{
     width: 100%;
     display: flex;
-    padding-top: 10px;
     align-items: center;
+    border-bottom: 1px solid #011627;
+    justify-content: center;
 }
 .profile-avatar{
-    margin: 60px 20px 20px 60px;
+    margin-block: 40px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -34,7 +40,7 @@ body{
 .upper-section h1{
     font-family: 'Merriweather', serif;
     font-size: 4rem;
-    margin-left: 15px;
+    margin-left: 20px;
     font-weight: 900;
     color: #011627;
 }
@@ -45,13 +51,17 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #011627;
 }
 .options{
     width: 300px;
     height: 200px;
     position: relative;
     cursor: pointer;
-    background: linear-gradient(30deg,#fb5607,#ffbe0b);
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image\ assets/per\ info\ back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -59,21 +69,27 @@ body{
     position: absolute;
     font-size: 1.5rem;
     font-family: 'Merriweather', serif;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     top: 45%;
     left: 10%;
     color: #fff;
 }
 .options:nth-child(2){
-    background: linear-gradient(30deg,#00b4d8,#90e0ef);
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image\ assets/profile\ page\ back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .options:nth-child(2) h1{
     left: 20%;
     font-size: 1.7rem;
 }
 .options:nth-child(3){
-    background: linear-gradient(30deg,#bf0603,#8d0801);
+    background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)) ,url(image\ assets/logout\ back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .options:nth-child(3) h1{
     left: 30%;

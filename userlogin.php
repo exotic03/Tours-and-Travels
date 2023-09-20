@@ -11,6 +11,7 @@ if($result->num_rows>0){
         $_SESSION['userid']=$row['id'];
         $_SESSION['username']=$row['username'];
         $_SESSION['fullname']=$row['name'];
+        $_SESSION['useremail']=$row['email'];
         header("location:home.php");
     }
 }
