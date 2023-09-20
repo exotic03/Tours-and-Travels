@@ -303,6 +303,7 @@
                 <input type="password" name="pass" placeholder="Enter your password" class="input" autocomplete="off">
                 <p><input type="submit" value="LOGIN" class="log"></p>
               </form>
+              <p class="redirect">Don't Have an Account <a data-bs-toggle="modal" data-bs-target="#signupsection" data-bs-dismiss="modal">Register</a></p>
             </div>
           </div>
         </div>
@@ -319,18 +320,23 @@
               <h1>Register</h1>
               <form action="usersignup.php" method="post">
                 <h4>Full Name</h4>
-                <input type="text" name="name" placeholder="Enter your name" class="input" autocomplete="off">
+                <input type="text" name="name" placeholder="Enter your name" class="input" autocomplete="off" id="name" onkeyup="validateName()">
+                <span id="nerror"></span>
                 <h4>Email Address</h4>
-                <input type="email" name="email" placeholder="Enter your Email address" class="input" autocomplete="off">
+                <input type="email" name="email" placeholder="Enter your Email address" class="input" autocomplete="off" id="email" onkeyup="validateEmail()">
+                <span id="mailerror"></span>
                 <h4>Create Username</h4>
-                <input type="text" name="username" placeholder="Create your Username" class="input" autocomplete="off">
+                <input type="text" name="username" placeholder="Create your Username" class="input" autocomplete="off" id="username" onkeyup="validateUsername()">
+                <span id="usererror"></span>
                 <h4>Create Password</h4>
-                <input type="password" name="pass" placeholder="Create your password" class="input" autocomplete="off">
+                <input type="password" name="pass" placeholder="Create your password" class="input" autocomplete="off" id="pass" onkeyup="validatePassword()">
+                <span id="passerror"></span>
                 <h4>Confirm Password</h4>
-                <input type="password" name="cpass" placeholder="Re-enter your password" class="input"
-                  autocomplete="off">
+                <input type="password" name="cpass" placeholder="Re-enter your password" class="input" autocomplete="off" id="cpass">
+                <span id="cpasserror"></span>
                 <p><input type="submit" value="SIGN UP" class="log"></p>
               </form>
+              <p class="redirect">Already Have an Account <a data-bs-toggle="modal" data-bs-target="#loginsection" data-bs-dismiss="modal">Login</a></p>
             </div>
           </div>
         </div>
@@ -348,7 +354,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>

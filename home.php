@@ -303,7 +303,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="homescript.js"></script>
 </body>
 
 </html>
