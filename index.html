@@ -334,7 +334,8 @@
                 <h4>Confirm Password</h4>
                 <input type="password" name="cpass" placeholder="Re-enter your password" class="input" autocomplete="off" id="cpass">
                 <span id="cpasserror"></span>
-                <p><input type="submit" value="SIGN UP" class="log"></p>
+                <p><input type="submit" value="SIGN UP" class="log" onclick="return validateForm()"></p>
+                <span id="submiterror"></span>
               </form>
               <p class="redirect">Already Have an Account <a data-bs-toggle="modal" data-bs-target="#loginsection" data-bs-dismiss="modal">Login</a></p>
             </div>

@@ -365,7 +365,7 @@ footer .footer-links{
 }
 .rmain{
     width: 100%;
-    height: 800px;
+    height: 850px;
     background-color: aliceblue;
     border-radius: 20px;
     display: flex;
@@ -456,7 +456,7 @@ footer .footer-links{
     font-size: 0.9rem;
     margin-top: 5px;
     width: 250px;
-    text-align: center;
+    text-align: left;
 }
 @media (max-width:1037px){
     .main-nav .logo #homelink{
@@ -490,7 +490,13 @@ footer .footer-links{
         font-size: 2rem;
     }
     .main{
-        height: 500px;
+        height: 550px;
+    }
+    .main .img{
+        width: 45%;
+    }
+    .loginform{
+        width: 55%;
     }
     .loginform h1{
         font-size: 1.5rem;
@@ -505,9 +511,12 @@ footer .footer-links{
     .loginform form .log{
         width: 200px;
         margin-top: 30px;
-    }   
+    }
+    .loginform .redirect{
+        font-size: 12px;
+    }
     .rmain{
-        height: 700px;
+        height: 800px;
     }
     .rmain .img{
         width: 45%;
@@ -521,12 +530,18 @@ footer .footer-links{
     }
     .signupform .input{
         width: 200px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     .signupform form h4{
          font-size: 1rem;   
     }
     .signupform form .log{
+        width: 200px;
+    }
+    .signupform .redirect{
+        font-size: 13px;
+    }
+    .signupform form span{
         width: 200px;
     }
 }
@@ -621,10 +636,11 @@ footer .footer-links{
         font-size: 1.8rem !important;
     }
     .main .img{
-        width: 45%;
+        display: none;
     }
-    .loginform {
-        width: 55%;
+    .loginform{
+        width: 100%;
+        justify-content: center;
     }
     .loginform h1{
         font-size: 1rem;
@@ -640,6 +656,12 @@ footer .footer-links{
     .loginform form .log{
         width: 160px;
         font-size: 1rem;
+    }
+    .rmain .img{
+        display: none;
+    }
+    .signupform{
+        width: 100%;
     }
     .signupform h1{
         font-size: 1rem;
@@ -689,9 +711,6 @@ footer .footer-links{
     .content .card-container .cards:nth-child(2){
         display: none;
     }
-    .main .img{
-        display: none;
-    }
     .loginform h1{
         font-size: 1rem;
     }
@@ -705,10 +724,6 @@ footer .footer-links{
     .loginform form .log{
         width: 150px;
         font-size: 1rem;
-    }
-    .rmain{
-        width: 100%;
-        justify-content: center;
     }
     .signupform h1{
         font-size: 1rem;

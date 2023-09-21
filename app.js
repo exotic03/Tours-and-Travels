@@ -119,6 +119,7 @@ let mailerror=document.getElementById("mailerror");
 let usererror=document.getElementById("usererror");
 let passerror=document.getElementById("passerror");
 let cpasserror=document.getElementById("cpasserror");
+let submiterror=document.getElementById("submiterror");
 
 const isPasswordSecure = (password) => {
     const re = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
@@ -186,5 +187,28 @@ function validatePassword(){
         passerror.innerHTML="Password must has at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)";
         passerror.style.color="red";
         return false;
+    }else{
+        passerror.innerHTML=`<i class="fa-regular fa-circle-check"></i>`;
+        passerror.style.color="green";
+        return true;
+    }
+}
+
+function validateForm(){
+    if(!validateName() || !validateEmail() || !validateUsername() || !validatePassword()){
+        if(pass.value.trim()===cpass.value.trim()){
+            cpasserror.innerHTML="Password not match";
+            cpasserror.style.color="red";
+            return false;
+        }
+        submiterror.innerHTML="Please fill all the fields";
+        submiterror.style.color="red";
+        setTimeout(()=>{
+            submiterror.style.display="none";
+        },3000);
+        return false;
+    }
+    else{
+        return true;
     }
 }
