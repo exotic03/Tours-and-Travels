@@ -22,7 +22,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <div class="main-nav">
       <div class="logo">
         <img src="../image assets/download.png" alt="">
-        <a href="#" id="homelink">Tour And Travels</a>
+        <a href="../home.php" id="homelink">Tour And Travels</a>
       </div>
       <div class="navlinks" id="navlinks">
         <ul>
@@ -30,7 +30,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
-          <li><a href="#" class="profile"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="../profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
         </ul>
       </div>
       <div href="#" class="toggle-btn" id="toggle-btn"><i class="fa-solid fa-bars"></i></div>

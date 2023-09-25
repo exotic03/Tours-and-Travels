@@ -22,11 +22,11 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <div class="main-nav">
       <div class="logo">
         <img src="image assets/t pic.png" alt="">
-        <a href="#" id="homelink">Tour And Travels</a>
+        <a href="home.php" id="homelink">Tour And Travels</a>
       </div>
       <div class="navlinks" id="navlinks">
         <ul>
-          <li><a href="#" class="links">Home</a></li>
+          <li><a href="home.php" class="links">Home</a></li>
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
