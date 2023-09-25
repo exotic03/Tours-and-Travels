@@ -176,6 +176,7 @@ nav {
 .header-img form button i {
     color: black !important;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 #head {

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #edf2fb;
+}
+
+nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+}
+
+.main-nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+}
+
+.main-nav .logo img {
+    width: 80px;
+    height: 70px;
+}
+
+.main-nav .logo #homelink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Borel', cursive;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    color: #011627;
+}
+
+.main-nav .navlinks ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.main-nav .navlinks ul li {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.main-nav .navlinks ul li .links {
+    text-decoration: none;
+    color: #011627;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-nav .navlinks ul li .links:hover {
+    color: #011627;
+    border-bottom: 2px solid #011627;
+}
+.main-nav .navlinks ul li .profile i {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease-in;
+}
+.main-nav .navlinks ul li .profile i:hover{
+    color: #003;
+}
+
+.toggle-btn {
+    display: none;
+    text-decoration: none;
+}
+
+.main-nav .toggle-btn i {
+    font-size: 2.2rem;
+    color: #fff;
+}
+
+.desc-header-section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+    padding-inline: 50px;
+}
+.desc-header-section img{
+    width: 50%;
+    height: 70%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+.desc-header-section .short-details{
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #d7e3fc;
+    border-radius: 15px;
+    overflow: hidden;
+    padding-block: 15px;
+}
+.short-details .pack-name{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.short-details .pack-type{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.short-details .price{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.short-details .duration{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.short-details .places{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+.service{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.service .include{
+    width: 600px;
+    height: 80px;
+    background-color: #e2eafc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.include h3{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #011627;
+}
+.include i{
+    font-size: 2rem;
+    color: #011627;
+}
+.description{
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.description h1{
+    color: #011627;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.description .desc{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
