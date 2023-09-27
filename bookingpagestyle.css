@@ -185,6 +185,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #011627;
 }
 .description h1{
     color: #011627;
@@ -196,4 +198,30 @@ nav {
     font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+.details-add-section{
+    width: 100%;
+    padding: 50px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.details-add-section form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputBox{
+    outline: none;
+    border: 1px solid #d7e3fc;
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    border-radius: 10px;
+    padding-right: 10px;
 }
