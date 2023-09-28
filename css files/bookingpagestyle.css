@@ -35,8 +35,8 @@ nav {
 }
 
 .main-nav .logo img {
-    width: 80px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 .main-nav .logo #homelink {
@@ -127,11 +127,13 @@ nav {
     text-decoration: underline;
     text-transform: capitalize;
     font-weight: 600;
+    text-align: center;
 }
 .short-details .pack-type{
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    text-align: center;
 }
 .short-details .price{
     font-size: 1.5rem;
@@ -166,6 +168,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    box-shadow: 0px 0px 5px #011627;
 }
 .include h3{
     font-size: 1.5rem;
@@ -186,7 +189,7 @@ nav {
     flex-direction: column;
     gap: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px #011627;
+    box-shadow: 0px 0px 5px #d7e3fc;
 }
 .description h1{
     color: #011627;
@@ -210,11 +213,55 @@ nav {
     align-items: start;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px #d7e3fc;
+}
+.details-add-section .addoption h1{
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+.details-add-section button{
+    outline: none;
+    border: none;
+    background-color: #003;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 15px;
 }
 .details-add-section form{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+form h2{
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+    margin-top: 15px;
+}
+form #date{
+    width: 200px;
+    height: 60px;
+    background-color: #d7e3fc;
+    outline: none;
+    border: 1px solid #e2eafc;
+    border-radius: 10px;
+    padding-inline: 10px;
+    cursor: pointer;
+}
+form #tnum{
+    width: 250px;
+    height: 60px;
+    background-color: #d7e3fc;
+    outline: none;
+    border: 1px solid #e2eafc;
+    border-radius: 10px;
+    padding-inline: 10px;
 }
 .inputBox{
     outline: none;
@@ -224,4 +271,154 @@ nav {
     padding-left: 10px;
     border-radius: 10px;
     padding-right: 10px;
+    background-color: #edf6f9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.inputBox::placeholder{
+    color: #000;
+}
+.inputBox:focus{
+    border: 2px solid #003;
+}
+form #tnum::placeholder{
+    color: #000;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+form #tnum:focus{
+    border: 2px solid #003;
+}
+form #btn{
+    outline: none;
+    padding: 15px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    background-color: #b6ccfe;
+    border-radius: 10px;
+    border: none;
+    color: #003;
+    font-weight: 400;
+    margin-top: 10px;
+    transition: all 0.3s ease-in;
+}
+form #btn:hover{
+    background-color: #003;
+    color: #fff;
+    font-weight: 400;
+}
+@media (max-width:891px){
+    .toggle-btn{
+        display: block;
+    }
+    .main-nav .toggle-btn i{
+        margin-right: 20px;
+    }
+    .navlinks{
+        position: absolute;
+        background-color: #788bff;
+        left: -100%;
+        top: 100%;
+        width: 100%;
+        padding-block: 30px;
+        transition: 0.2s ease-in-out;
+        z-index: 100;
+    }
+    .navlinks.active{
+        left: 0;
+    }
+    .main-nav .navlinks ul{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .short-details .pack-name{
+        font-size: 1.6rem;
+    }
+    .short-details .pack-type{
+        font-size: 1.2rem;
+    }
+    .short-details .price{
+        font-size: 1.2rem;
+    }
+    .short-details .duration{
+        font-size: 1.2rem;
+    }
+    .short-details .places{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:768px){
+    .desc-header-section{
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 80px;
+    }
+    .desc-header-section img{
+        width: 100%;
+        height: 60%;
+    }
+    .desc-header-section .short-details{
+        width: 100%;
+        height: 35%;
+    }
+    .service .include{
+        width: 500px;
+    }
+    .include i{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:540px){
+    .service .include{
+        width: 400px;
+    }
+    .include i{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:425px){
+    .main-nav .logo #homelink{
+        font-size: 1rem;
+    }
+    .service .include{
+        width: 300px;
+    }
+    .include h3{
+        font-size: 1rem;
+    }
+    .include i{
+        font-size: 1rem;
+    }
+    .description h1{
+        font-size: 1.5rem;
+    }
+    .details-add-section .addoption h1{
+        font-size: 1.5rem;
+    }
+    .details-add-section button{
+        font-size: 1rem;
+    }
+    form h2{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:330px){
+    .main-nav .logo #homelink{
+        font-size: 0.7rem;
+    }
+    .short-details .pack-name{
+        font-size: 1.2rem;
+    }
+    .short-details .pack-type{
+        font-size: 1rem;
+    }
+    .short-details .price{
+        font-size: 1rem;
+    }
+    .short-details .duration{
+        font-size: 1rem;
+    }
+    .short-details .places{
+        font-size: 1rem;
+    }
 }

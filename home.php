@@ -11,7 +11,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="homestyle.css">
+  <link rel="stylesheet" href="css files/homestyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Tours and Travels Home Page</title>
@@ -303,7 +303,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
-  <script src="homescript.js"></script>
+  <script src="js files/homescript.js"></script>
 </body>
 
 </html>

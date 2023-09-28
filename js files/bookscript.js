@@ -36,6 +36,7 @@ window.onload=()=>{
 }
 
 var detailsForm=document.getElementById("detailsform");
+var btn=document.getElementById("btn");
 
 function addTraveller(){
     var nameBox=document.createElement("input");
@@ -48,6 +49,6 @@ function addTraveller(){
     ageBox.name="tage[]";
     ageBox.placeholder="Add Traveller Age";
     ageBox.className="inputBox";
-    detailsForm.appendChild(nameBox);
-    detailsForm.appendChild(ageBox);
+    btn.parentNode.insertBefore(nameBox,btn);
+    btn.parentNode.insertBefore(ageBox,btn);
 }

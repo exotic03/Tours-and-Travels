@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
+    header("location:index.html");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="bookingpagestyle.css">
+    <link rel="stylesheet" href="css files/bookingpagestyle.css">
     <title>Booking Page</title>
 </head>
 
@@ -32,13 +39,20 @@
     </nav>
 
     <div class="desc-header-section">
-        <img src="image assets/ANDAMAN.jpg" alt="">
+        <?php
+        $connect=mysqli_connect("localhost","root","","tour_and_travels");
+        $packid=$_GET['id'];
+        $select="SELECT * FROM package_info where id='$packid'";
+        $result=$connect->query($select);
+        $data=$result->fetch_assoc();
+         ?>
+        <img src="admin/package images/<?php echo $data['package_image']; ?>" alt="">
         <div class="short-details">
-            <h2 class="pack-name">kashmir</h2>
-            <h2 class="pack-type">Package Category - standard</h2>
-            <h2 class="price">Per person - ₹ 10000 /-</h2>
-            <h2 class="duration">3 Days , 2 Nights</h2>
-            <h2 class="places">Gulmarg - sonal - sonmarg - srinagar</h2>
+            <h2 class="pack-name"><?php echo $data['package_name']; ?></h2>
+            <h2 class="pack-type">Package Category - <?php echo $data['category']; ?></h2>
+            <h2 class="price">Per person - ₹ <?php echo $data['package_price']; ?> /-</h2>
+            <h2 class="duration"><?php echo $data['day']; ?> Days , <?php echo $data['night']; ?> Nights</h2>
+            <h2 class="places"><?php echo $data['location']; ?></h2>
         </div>
     </div>
 
@@ -55,18 +69,20 @@
 
     <div class="description container">
         <h1>Detailed Package Summary : </h1>
-        <p class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta dolorum molestias libero ex aliquam neque eligendi porro, earum, perspiciatis minima consectetur ab impedit temporibus beatae architecto delectus laboriosam! Nemo tempora possimus quo porro velit.</p>
+        <p class="desc"><?php echo $data['package_desc']; ?></p>
     </div>
 
     <div class="details-add-section container">
         <div class="addoption">
-            <h1>Add Traveller Details</h1>
+            <h1>Add Traveller Details :</h1>
             <button onclick="addTraveller()">Add Traveller</button>
         </div>
-        <form action="#" id="detailsform">
-            <h2>Select Date</h2>
+        <form action="order_details.php" id="detailsform" method="POST">
+            <h2>Select Date :</h2>
             <input type="date" name="date" id="date">
-            <input type="submit" value="Book Package">
+            <h2>Contact No :</h2>
+            <input type="text" name="tnumber" id="tnum" placeholder="Enter contact number">
+            <input type="submit" value="Add Traveller Details" id="btn">
         </form>
       </div>
 
@@ -83,7 +99,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
-    <script src="bookscript.js"></script>
+    <script src="js files/bookscript.js"></script>
 </body>
 
 </html>

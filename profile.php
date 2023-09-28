@@ -12,7 +12,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profilestyle.css">
+    <link rel="stylesheet" href="css files/profilestyle.css">
     <title>Profile Information</title>
 </head>
 
