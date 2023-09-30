@@ -77,7 +77,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
             <h1>Add Traveller Details :</h1>
             <button onclick="addTraveller()">Add Traveller</button>
         </div>
-        <form action="order_details.php" id="detailsform" method="POST">
+        <form action="travellerdetails.php" id="detailsform" method="POST">
             <h2>Select Date :</h2>
             <input type="date" name="date" id="date">
             <h2>Contact No :</h2>
