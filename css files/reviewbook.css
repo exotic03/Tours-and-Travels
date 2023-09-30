@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #caf0f8;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    /* background-color: #fff; */
+}
+.main-nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+}
+.main-nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-nav .logo img{
+    width: 50px;
+    height: 50px;
+}
+.main-nav .logo #homelink{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Borel', cursive; text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    color: #011627;
+}
+li{
+    list-style: none;
+}
+.main-nav li .profile i {
+    font-size: 1.5rem;
+    color: #000;
+    transition: all 0.3s ease-in;
+}
+.main-nav .navlinks ul li .profile i:hover{
+    color: #003;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section{
+    width: 60%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+    padding-block: 30px;
+    gap: 15px;
+}
+.section h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.section .package-info{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    padding: 30px;
+    gap: 25px;
+}
+.section .package-info .details{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.section .payment-info{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: start;
+    padding: 30px;
+    flex-direction: column;
+    gap: 5px;
+}
+.section .payment-info h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.section .payment-info .line{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+.section .payment-info .pprice{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+.pprice h5{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #003;
+}
+.pprice p{
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #003;
+}
+.section #bookpck{
+    text-decoration: none;
+    background-color: orange;
+    font-family: 'Poppins', sans-serif;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-radius: 10px;
+    color: #003;
+    font-weight: 600;
+}

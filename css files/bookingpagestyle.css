@@ -307,6 +307,21 @@ form #btn:hover{
     color: #fff;
     font-weight: 400;
 }
+.details-add-section #proceedBtn{
+    text-decoration: none;
+    padding: 15px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: #788bff;
+    font-weight: 600;
+    margin-top: 20px;
+    border: 1px solid #788bff;
+    transition: all 0.3s ease-in;
+}
+.details-add-section #proceedBtn:hover{
+    background-color: #788bff;
+}
 @media (max-width:891px){
     .toggle-btn{
         display: block;

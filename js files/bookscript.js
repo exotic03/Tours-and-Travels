@@ -45,10 +45,33 @@ function addTraveller(){
     nameBox.name="tname[]";
     nameBox.placeholder="Add Traveller";
     nameBox.className="inputBox";
+    nameBox.id="tname";
     ageBox.type="text";
     ageBox.name="tage[]";
     ageBox.placeholder="Add Traveller Age";
     ageBox.className="inputBox";
+    ageBox.id="tage";
     btn.parentNode.insertBefore(nameBox,btn);
     btn.parentNode.insertBefore(ageBox,btn);
+}
+
+function sendDetails(){
+    var bookingDate=$('#date').val();
+    var contactnum=$('#tnum').val();
+    var tname=$('#tname').val();
+    var tage=$('#tage').val();
+    
+    $.ajax({
+        type:'POST',
+        url:'travellerdetails.php',
+        data:{
+            bdate:bookingDate,
+            contact:contactnum,
+            name:tname,
+            age:tage
+        },
+        success:function(response){
+            alert(response);
+        }
+    });
 }

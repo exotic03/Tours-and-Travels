@@ -22,7 +22,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <nav>
         <div class="main-nav">
             <div class="logo">
-                <img src="../image assets/download.png" alt="">
+                <!-- <img src="../image assets/download.png" alt=""> -->
                 <a href="home.php" id="homelink">Tour And Travels</a>
             </div>
             <div class="navlinks" id="navlinks">
@@ -77,13 +77,14 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
             <h1>Add Traveller Details :</h1>
             <button onclick="addTraveller()">Add Traveller</button>
         </div>
-        <form action="travellerdetails.php" id="detailsform" method="POST">
+        <form id="detailsform" method="POST">
             <h2>Select Date :</h2>
             <input type="date" name="date" id="date">
             <h2>Contact No :</h2>
             <input type="text" name="tnumber" id="tnum" placeholder="Enter contact number">
-            <input type="submit" value="Add Traveller Details" id="btn">
+            <input type="button" value="Add Traveller Details" id="btn" onclick="sendDetails()">
         </form>
+        <a href="reviewbookingpage.php?id=<?php echo $data['id'];?>" id="proceedBtn">Proceed Booking</a>
       </div>
 
     
@@ -99,6 +100,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js files/bookscript.js"></script>
 </body>
 
