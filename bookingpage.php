@@ -78,6 +78,14 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
             <button onclick="addTraveller()">Add Traveller</button>
         </div>
         <form id="detailsform" method="POST">
+            <h2>Select Number of Traveller :</h2>
+            <select name="quantity" id="quantity">
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
             <h2>Select Date :</h2>
             <input type="date" name="date" id="date">
             <h2>Contact No :</h2>
