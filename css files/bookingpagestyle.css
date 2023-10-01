@@ -329,6 +329,7 @@ form #btn:hover{
 }
 .details-add-section #proceedBtn:hover{
     background-color: #788bff;
+    color:#fff;
 }
 @media (max-width:891px){
     .toggle-btn{

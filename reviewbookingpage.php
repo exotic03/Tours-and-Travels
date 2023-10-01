@@ -1,3 +1,10 @@
+<?php
+session_start();
+if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
+    header("location:index.html");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,24 +32,35 @@
     <div id="main">
         <div class="section">
             <h3>Review Booking Details</h3>
+            <?php
+            $connect=mysqli_connect("localhost","root","","tour_and_travels");
+            $packid=$_GET['id'];
+            $select="SELECT * FROM package_info where id='$packid'";
+            $result=$connect->query($select);
+            $data=$result->fetch_assoc();
+            $tquantity=$_SESSION['temp_data']['quantity'];
+            $tdate=$_SESSION['temp_data']['date'];
+            $pack_price=$data['package_price'];
+            $total_price=$pack_price*$tquantity;
+         ?>
             <div class="package-info">
-                <h4 class="details"><i class="fa-solid fa-umbrella-beach"></i> Kashmir</h4>
-                <h4 class="details"><i class="fa-solid fa-person"></i> 4 Travellers</h4>
-                <h4 class="details"><i class="fa-regular fa-calendar-days"></i> 23-45-2023</h4>
+                <h4 class="details"><i class="fa-solid fa-umbrella-beach"></i> <?php echo $data['package_name']; ?></h4>
+                <h4 class="details"><i class="fa-solid fa-person"></i> <?php echo $tquantity?> Travellers</h4>
+                <h4 class="details"><i class="fa-regular fa-calendar-days"></i> <?php echo $tdate?></h4>
             </div>
             <div class="payment-info">
                 <h4>Fare Details :</h4>
                 <div class="line"></div>
                 <div class="pprice">
                     <h5>Package Price</h5>
-                    <p>₹4566/- per person</p>
+                    <p>₹ <?php echo $data['package_price']; ?>/- per person</p>
                 </div>
                 <div class="pprice">
                     <h5>Total Package Price</h5>
-                    <p>₹456654/-</p>
+                    <p>₹ <?php echo $total_price?> /-</p>
                 </div>
             </div>
-            <a href="#" id="bookpck">Book Package</a>
+            <a href="order_details.php?id=<?php echo $data['id'];?>" id="bookpck">Book Package</a>
         </div>
     </div>
 

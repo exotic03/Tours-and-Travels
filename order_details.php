@@ -14,7 +14,19 @@ $result=$connect->query($selpack);
 $packdata=$result->fetch_assoc();
 $package_name=$packdata['package_name'];
 $package_price=$packdata['package_price'];
-$insert="INSERT INTO bookings_info SET package_name='$package_name',package_price='$package_price',user_id='$userid'";
+$tquantity=$_SESSION['temp_data']['quantity'];
+$tdate=$_SESSION['temp_data']['date'];
+$contact_no=$_SESSION['temp_data']['contact'];
+$tname=$_SESSION['temp_data']['name'];
+$tage=$_SESSION['temp_data']['age'];
+// if(isset($_SESSION['temp_data']['name'])){
+//     $tname=implode(",",$_SESSION['temp_data']['name']);
+// }
+// if(isset($_SESSION['temp_data']['age'])){
+//     $tage=implode(",",$_SESSION['temp_data']['age']);
+// }
+$total_price=$package_price*$tquantity;
+$insert="INSERT INTO bookings_info SET package_name='$package_name',package_price='$total_price',tourist_number='$tquantity',date='$tdate',contact_no='$contact_no',traveller_name='$tname',traveller_age='$tage',user_id='$userid'";
 $connect->query($insert);
-header("location:seasional packages/summerpack.php");
+header("location:home.php");
 ?>

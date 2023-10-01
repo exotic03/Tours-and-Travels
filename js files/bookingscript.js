@@ -56,8 +56,9 @@ function addTraveller(){
 }
 
 function sendDetails(){
-    var bookingDate=$('#date').val();
-    var contactnum=$('#tnum').val();
+    var quantity=$('#quantity').val();
+    var date=$('#date').val();
+    var tnumber=$('#tnum').val();
     var tname=$('#tname').val();
     var tage=$('#tage').val();
     
@@ -65,10 +66,11 @@ function sendDetails(){
         type:'POST',
         url:'travellerdetails.php',
         data:{
-            bdate:bookingDate,
-            contact:contactnum,
-            name:tname,
-            age:tage
+            quantity:quantity,
+            date:date,
+            tnumber:tnumber,
+            tname:tname,
+            tage:tage
         },
         success:function(response){
             alert(response);
