@@ -68,6 +68,11 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
             <tr>
               <th scope="col">Package Name</th>
               <th scope="col">Package Price</th>
+              <th scope="col">Tourist Number</th>
+              <th scope="col">Date</th>
+              <th scope="col">Contact No</th>
+              <th scope="col">Travellers Name</th>
+              <th scope="col">Travellers Age</th>
               <th scope="col">User ID</th>
             </tr>
           </thead>
@@ -81,6 +86,11 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
             <tr>
               <td><?php echo $line['package_name'] ?></td>
               <td><?php echo $line['package_price'] ?></td>
+              <td><?php echo $line['tourist_number'] ?></td>
+              <td><?php echo $line['date'] ?></td>
+              <td><?php echo $line['contact_no'] ?></td>
+              <td><?php echo $line['traveller_name'] ?></td>
+              <td><?php echo $line['traveller_age'] ?></td>
               <td><?php echo $line['user_id'] ?></td>
             </tr>
             <?php

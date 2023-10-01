@@ -263,6 +263,14 @@ form #tnum{
     border-radius: 10px;
     padding-inline: 10px;
 }
+form #quantity{
+    width: 250px;
+    height: 60px;
+    background-color: #d7e3fc;
+    outline: none;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
 .inputBox{
     outline: none;
     border: 1px solid #d7e3fc;
