@@ -1,104 +1,137 @@
-gsap.to("nav",{
-    backgroundColor:"#b6ccfe",
-    boxShadow:"1px 1px 5px #011627",
-    duration:0.5,
+gsap.to(".main-nav",{
+    backgroundColor:"#ffffff",
+    top: "2%",
+    boxShadow:"1px 1px 5px #22223b",
+    duration:0.3,
     scrollTrigger:{
-        trigger:"nav",
+        trigger:".main-nav",
         scroller:"body",
         start:"top -5%",
         end:"top -6%",
         scrub:2
     }
 });
-gsap.from(".c1",{
-    delay:0.2,
-    opacity:0,
-    duration:1,
-    x:60,
+gsap.to(".links",{
+    color:"#ff9500",
+    duration:0.1,
     scrollTrigger:{
-        trigger:".c1",
+        trigger:".links",
+        scroller:"body",
+        start:"top -5%",
+        end:"top -6%",
+        scrub:2
+    }
+});
+gsap.to(".pbtn",{
+    color:"#fff",
+    backgroundColor:"#d62828",
+    border:"none",
+    duration:0.1,
+    scrollTrigger:{
+        trigger:".pbtn",
+        scroller:"body",
+        start:"top -5%",
+        end:"top -6%",
+        scrub:2
+    }
+});
+gsap.to(".sbtn",{
+    color:"#fff",
+    backgroundColor:"#f48c06",
+    border:"none",
+    duration:0.1,
+    scrollTrigger:{
+        trigger:".sbtn",
+        scroller:"body",
+        start:"top -5%",
+        end:"top -6%",
+        scrub:2
+    }
+});
+gsap.from(".featured-section h3",{
+    delay:0.9,
+    opacity:0,
+    y:80,
+    duration:0.5,
+    scrollTrigger:{
+        trigger:".featured-section h3",
         scroller:"body",
         start:"top 80%",
         end:"top 90%",
         scrub:2
     }
 });
-gsap.from(".c2",{
-    delay:0.2,
+gsap.from(".featured-section h2",{
+    delay:1.2,
     opacity:0,
-    duration:1,
-    x:-60,
+    y:90,
+    duration:0.5,
     scrollTrigger:{
-        trigger:".c2",
+        trigger:".featured-section h2",
         scroller:"body",
         start:"top 80%",
         end:"top 90%",
         scrub:2
     }
 });
-gsap.from(".c3",{
-    delay:0.2,
+gsap.from(".photo-grid",{
+    delay:1.5,
     opacity:0,
-    duration:1,
-    x:60,
+    y:100,
+    duration:0.5,
     scrollTrigger:{
-        trigger:".c3",
+        trigger:".photo-grid",
         scroller:"body",
         start:"top 80%",
         end:"top 90%",
         scrub:2
     }
 });
-gsap.from(".c4",{
-    delay:0.2,
+gsap.from(".big-section",{
     opacity:0,
-    duration:1,
-    x:-60,
+    scale:0,
     scrollTrigger:{
-        trigger:".c4",
+        trigger:".big-section",
         scroller:"body",
         start:"top 80%",
-        end:"top 90%",
-        scrub:2
+        end:"top 85%",
+        scrub:2,
     }
 });
-gsap.from(".c5",{
-    delay:0.2,
+gsap.from(".small-section",{
     opacity:0,
-    duration:1,
-    x:60,
+    scale:0,
+    delay:1,
     scrollTrigger:{
-        trigger:".c5",
+        trigger:".small-section",
         scroller:"body",
         start:"top 80%",
-        end:"top 90%",
-        scrub:2
+        end:"top 85%",
+        scrub:2,
     }
 });
-gsap.from(".c6",{
-    delay:0.2,
+gsap.from(".package-heads",{
     opacity:0,
-    duration:1,
-    x:-60,
+    y:90,
+    duration:0.5,
     scrollTrigger:{
-        trigger:".c6",
+        trigger:".package-heads",
         scroller:"body",
         start:"top 80%",
-        end:"top 90%",
-        scrub:2
+        end:"top 85%",
+        scrub:2,
     }
 });
-gsap.from(".c7",{
-    delay:0.2,
+gsap.from(".cards",{
     opacity:0,
-    duration:1,
-    x:60,
+    scale:0,
+    duration:0.5,
     scrollTrigger:{
-        trigger:".c7",
+        trigger:".cards",
         scroller:"body",
         start:"top 80%",
-        end:"top 90%",
-        scrub:2
+        end:"top 85%",
+        scrub:2,
     }
 });
 
