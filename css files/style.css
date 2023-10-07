@@ -468,7 +468,7 @@ footer .footer-links{
 .main .img{
     width: 50%;
     height: 100%;
-    background-image: url(image\ assets/taj\ agra.jpg);
+    background-image: url(../image\ assets/taj\ agra.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -554,7 +554,7 @@ footer .footer-links{
 .rmain .img{
     width: 50%;
     height: 100%;
-    background-image: url(image\ assets/ladakh7.jpg);
+    background-image: url(../image\ assets/ladakh7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
