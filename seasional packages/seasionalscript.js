@@ -22,32 +22,6 @@ gsap.to(".links",{
         scrub:2
     }
 });
-gsap.to(".pbtn",{
-    color:"#fff",
-    backgroundColor:"#d62828",
-    border:"none",
-    duration:0.1,
-    scrollTrigger:{
-        trigger:".pbtn",
-        scroller:"body",
-        start:"top -5%",
-        end:"top -6%",
-        scrub:2
-    }
-});
-gsap.to(".sbtn",{
-    color:"#fff",
-    backgroundColor:"#f48c06",
-    border:"none",
-    duration:0.1,
-    scrollTrigger:{
-        trigger:".sbtn",
-        scroller:"body",
-        start:"top -5%",
-        end:"top -6%",
-        scrub:2
-    }
-});
 
 let search=document.getElementById("search");
 let as=document.getElementById("animatesearch");

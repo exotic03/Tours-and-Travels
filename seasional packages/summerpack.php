@@ -11,31 +11,30 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../image assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="summerstyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="summerstyle.css">
-  <title>Summer Packages</title>
+  <title>Trippy - Tour and Travels</title>
 </head>
 
 <body>
   <nav>
     <div class="main-nav">
-      <div class="logo">
-        <img src="../image assets/download.png" alt="">
-        <a href="../home.php" id="homelink">Tour And Travels</a>
-      </div>
+      <img src="../image assets/logo.png" alt="">
       <div class="navlinks" id="navlinks">
         <ul>
-          <li><a href="../home.php" class="links">Home</a></li>
+          <li><a href="#" class="links">Home</a></li>
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
-          <li><a href="../profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
         </ul>
       </div>
       <div href="#" class="toggle-btn" id="toggle-btn"><i class="fa-solid fa-bars"></i></div>
     </div>
   </nav>
+
   <div class="header-img">
     <h1>Summer Packages</h1>
     <form method="GET" class="search-bar">
@@ -54,13 +53,13 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     $search_value=$_GET['search_data'];
     $sel="SELECT * FROM package_info where classification='Summer Destination' AND package_name LIKE '%$search_value%'";
     $result=mysqli_query($connect,$sel);?>
-    <h2 class="container" style="color: #011627;">Showing results regarding <?php echo $search_value ?> </h2>
+    <h2 class="container" style="color: #03071e;">Showing results regarding <?php echo $search_value ?> </h2>
     <div class="all-products container">
       <?php
       if(mysqli_num_rows($result)>0){
         foreach($result as $data){
           ?>
-          <div class="products">
+  <div class="products">
             <img src="../admin/package images/<?php echo $data['package_image']; ?>">
             <div class="product-info">
               <h4 class="product-title"><?php echo $data['package_name']?></h4>
@@ -69,7 +68,8 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
               <a class="product-btn" href="../bookingpage.php?id=<?php echo $line['id'];?>">View Deatils</a>
             </div>
           </div>
-          <?php
+
+  <?php
         }
       }else{
         ?>
@@ -98,16 +98,15 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
             }
           }
     ?>
-    
-  </div>
+   
   <footer>
-    <h1>Tour and Travels</h1>
+    <h1>Trippy</h1>
     <div class="footer-links">
-      <h3>Products</h3>
-      <a href="#">Overview</a>
-      <a href="#">Customers</a>
-      <a href="#">Pricing</a>
-      <a href="#">Bookings</a>
+      <h3>Support</h3>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Help Center</a>
+      <a href="#">Call Center</a>
     </div>
     <div class="footer-links">
       <h3>Services</h3>
