@@ -98,7 +98,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
             }
           }
     ?>
-   
+   </div>
   <footer>
     <h1>Trippy</h1>
     <div class="footer-links">
