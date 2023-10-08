@@ -12,7 +12,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../image assets/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="winterpackstyle.css">
+  <link rel="stylesheet" href="winterstyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Trippy - Tour and Travels</title>
@@ -24,11 +24,11 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
       <img src="../image assets/logo.png" alt="">
       <div class="navlinks" id="navlinks">
         <ul>
-          <li><a href="#" class="links">Home</a></li>
+          <li><a href="../home.php" class="links">Home</a></li>
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
-          <li><a href="profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="../profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
         </ul>
       </div>
       <div href="#" class="toggle-btn" id="toggle-btn"><i class="fa-solid fa-bars"></i></div>
@@ -133,7 +133,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
-  <script src="seasionalscript.js"></script>
+  <script src="seasionalpackscript.js"></script>
 </body>
 
 </html>

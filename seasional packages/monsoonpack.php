@@ -24,11 +24,11 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
       <img src="../image assets/logo.png" alt="">
       <div class="navlinks" id="navlinks">
         <ul>
-          <li><a href="#" class="links">Home</a></li>
+          <li><a href="../home.php" class="links">Home</a></li>
           <li><a href="#" class="links">About us</a></li>
           <li><a href="#" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
-          <li><a href="profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="../profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
         </ul>
       </div>
       <div href="#" class="toggle-btn" id="toggle-btn"><i class="fa-solid fa-bars"></i></div>
@@ -133,7 +133,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
-  <script src="seasionalscript.js"></script>
+  <script src="seasionalpackscript.js"></script>
 </body>
 
 </html>
