@@ -24,8 +24,8 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
             <img src="image assets/logo.png" alt="">
             <div class="navlinks" id="navlinks">
                 <ul>
-                    <li><a href="#" class="links">Home</a></li>
-                    <li><a href="#" class="links">About us</a></li>
+                    <li><a href="home.php" class="links">Home</a></li>
+                    <li><a href="about.html" class="links">About us</a></li>
                     <li><a href="#" class="links">Packages</a></li>
                     <li><a href="#" class="links">Offers</a></li>
                     <li><a href="profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
