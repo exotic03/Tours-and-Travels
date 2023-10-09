@@ -1,9 +1,9 @@
-<?php
+<!-- <?php
 session_start();
 if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     header("location:index.html");
 }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +11,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image assets/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css files/bookingpagestyle.css">
@@ -22,8 +23,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <nav>
         <div class="main-nav">
             <div class="logo">
-                <!-- <img src="../image assets/download.png" alt=""> -->
-                <a href="home.php" id="homelink">Tour And Travels</a>
+                <img src="image assets/logo.png" alt="">
             </div>
             <div class="navlinks" id="navlinks">
                 <ul>

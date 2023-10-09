@@ -1,9 +1,21 @@
-gsap.to("nav",{
-    backgroundColor:"#b6ccfe",
-    boxShadow:"1px 1px 5px #011627",
-    duration:0.5,
+gsap.to(".main-nav",{
+    backgroundColor:"#ffffff",
+    top: "2%",
+    boxShadow:"1px 1px 5px #22223b",
+    duration:0.3,
     scrollTrigger:{
-        trigger:"nav",
+        trigger:".main-nav",
+        scroller:"body",
+        start:"top -5%",
+        end:"top -6%",
+        scrub:2
+    }
+});
+gsap.to(".links",{
+    color:"#ff9500",
+    duration:0.1,
+    scrollTrigger:{
+        trigger:".links",
         scroller:"body",
         start:"top -5%",
         end:"top -6%",
