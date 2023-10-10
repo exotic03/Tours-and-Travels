@@ -54,12 +54,12 @@ function addTraveller(){
     var nameBox=document.createElement("input");
     var ageBox=document.createElement("input");
     nameBox.type="text";
-    nameBox.name="tname[]";
+    nameBox.name="tname";
     nameBox.placeholder="Add Traveller";
     nameBox.className="inputBox";
     nameBox.id="tname";
     ageBox.type="text";
-    ageBox.name="tage[]";
+    ageBox.name="tage";
     ageBox.placeholder="Add Traveller Age";
     ageBox.className="inputBox";
     ageBox.id="tage";
@@ -71,21 +71,39 @@ function sendDetails(){
     var quantity=$('#quantity').val();
     var date=$('#date').val();
     var tnumber=$('#tnum').val();
-    var tname=$('#tname').val();
-    var tage=$('#tage').val();
     
-    $.ajax({
-        type:'POST',
-        url:'travellerdetails.php',
-        data:{
-            quantity:quantity,
-            date:date,
-            tnumber:tnumber,
-            tname:tname,
-            tage:tage
-        },
-        success:function(response){
-            alert(response);
+    var inputsname=document.getElementsByName("tname");
+    var tnameArray=[];
+
+    for(var i=0;i<inputsname.length;i++){
+        tnameArray.push(inputsname[i].value);
+    }
+
+    var inputsage=document.getElementsByName("tage");
+    var tageArray=[];
+
+    for(var j=0;j<inputsage.length;j++){
+        tageArray.push(inputsage[j].value);
+    }
+
+    var tname=tnameArray.join(", ");
+    var tage=tageArray.join(", ");
+    
+    var formData=new FormData();
+    formData.append('tname',tname);
+    formData.append('tage',tage);
+    formData.append('quantity',quantity);
+    formData.append('date',date);
+    formData.append('tnumber',tnumber);
+
+    var request=new XMLHttpRequest();
+    request.onreadystatechange=()=>{
+        if(request.readyState===XMLHttpRequest.DONE){
+            if(request.status==200){
+                console.log(request.responseText);
+            }
         }
-    });
+    };
+    request.open("POST","travellerdetails.php",true);
+    request.send(formData);
 }

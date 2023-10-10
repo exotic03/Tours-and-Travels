@@ -19,12 +19,6 @@ $tdate=$_SESSION['temp_data']['date'];
 $contact_no=$_SESSION['temp_data']['contact'];
 $tname=$_SESSION['temp_data']['name'];
 $tage=$_SESSION['temp_data']['age'];
-// if(isset($_SESSION['temp_data']['name'])){
-//     $tname=implode(",",$_SESSION['temp_data']['name']);
-// }
-// if(isset($_SESSION['temp_data']['age'])){
-//     $tage=implode(",",$_SESSION['temp_data']['age']);
-// }
 $total_price=$package_price*$tquantity;
 $insert="INSERT INTO bookings_info SET package_name='$package_name',package_price='$total_price',tourist_number='$tquantity',date='$tdate',contact_no='$contact_no',traveller_name='$tname',traveller_age='$tage',user_id='$userid'";
 $connect->query($insert);

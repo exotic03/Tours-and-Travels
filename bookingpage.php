@@ -109,7 +109,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js files/bookingscript.js"></script>
+    <script src="js files/bookscript.js"></script>
 </body>
 
 </html>
