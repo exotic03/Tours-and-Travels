@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto+Slab:wght@400;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #fff;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+}
+
+.main-nav {
+    width: 90%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+    border-radius: 50px;
+}
+
+.main-nav img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.main-nav .navlinks ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.main-nav .navlinks ul li {
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+.main-nav .navlinks ul li .links {
+    text-decoration: none;
+    color: #000;
+    transition: all 0.1s ease-in-out;
+}
+
+.main-nav .navlinks ul li .links:hover {
+    border-bottom: 1px solid #ff9500;
+}
+
+.main-nav .navlinks ul li .profile i {
+    font-size: 1.5rem;
+    color: #000;
+    transition: all 0.3s ease-in;
+}
+.main-nav .navlinks ul li .profile i:hover{
+    color: #003;
+}
+
+.toggle-btn {
+    display: none;
+    text-decoration: none;
+}
+
+.main-nav .toggle-btn i {
+    font-size: 2.2rem;
+    color: #d62828;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main .profile-section{
+    width: 70%;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 10px 0px 20px #ccc,-10px 0px 20px  #ccc;
+    overflow: hidden;
+}
+.profile-section .left{
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(45deg,#fff,#ff9500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.profile-section .left img{
+    width: 150px;
+    height: 150px;
+}
+.profile-section .left h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+.profile-section .left h4{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+.profile-section .left a{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+.profile-section .left a:hover{
+    color: #d62828;
+    border: 2px solid #d62828;
+}
+.profile-section .right{
+    width: 70%;
+    height: 100%;
+    background-color: #edf6f9;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 30px;
+}
+.profile-section .right .options{
+    width: 200px;
+    height: 120px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 10px;
+    box-shadow: 10px 0px 20px #ccc,-10px 0px 20px  #ccc;
+    color: #03071e;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
