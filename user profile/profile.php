@@ -52,7 +52,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
             </div>
             <div class="right">
                 <a class="options" data-bs-toggle="modal" data-bs-target="#personalinfo">Personal information</a>
-                <a class="options">Package Details</a>
+                <a href="userpackage.php?id=<?php echo $user_id ?>" class="options">Package Details</a>
                 <a href="../userlogout.php" class="options">Logout</a>
             </div>
         </div>
