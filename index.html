@@ -315,10 +315,10 @@
                 <div class="loginform">
                   <h1>Login</h1>
                   <form action="userlogin.php" method="post">
+                    <h4>Phone Number</h4>
+                    <input type="text" name="phone" placeholder="Enter Phone Number" class="input" autocomplete="off">
                     <h4>Email</h4>
                     <input type="email" name="email" placeholder="Enter your Email" class="input" autocomplete="off">
-                    <h4>Username</h4>
-                    <input type="text" name="user" placeholder="Enter your Username" class="input" autocomplete="off">
                     <h4>Password</h4>
                     <input type="password" name="pass" placeholder="Enter your password" class="input" autocomplete="off">
                     <p><input type="submit" value="LOGIN" class="log"></p>
@@ -345,9 +345,9 @@
                     <h4>Email Address</h4>
                     <input type="email" name="email" placeholder="Enter your Email address" class="input" autocomplete="off" id="email" onkeyup="validateEmail()">
                     <span id="mailerror"></span>
-                    <h4>Create Username</h4>
-                    <input type="text" name="username" placeholder="Create your Username" class="input" autocomplete="off" id="username" onkeyup="validateUsername()">
-                    <span id="usererror"></span>
+                    <h4>Phone Number</h4>
+                    <input type="text" name="phone" placeholder="Enter Phone Number" class="input" autocomplete="off" id="phone" onkeyup="validatePhone()">
+                    <span id="phoneerror"></span>
                     <h4>Create Password</h4>
                     <input type="password" name="pass" placeholder="Create your password" class="input" autocomplete="off" id="pass" onkeyup="validatePassword()">
                     <span id="passerror"></span>

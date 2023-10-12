@@ -2,9 +2,9 @@
 $connect=mysqli_connect("localhost","root","","tour_and_travels");
 $uname=$_POST['name'];
 $uemail=$_POST['email'];
-$username=$_POST['username'];
+$userphone=$_POST['phone'];
 $upass=$_POST['pass'];
-$user_insert="INSERT INTO user_table SET name='$uname',email='$uemail',username='$username',user_pass='$upass'";
+$user_insert="INSERT INTO user_table SET name='$uname',email='$uemail',phnumber='$userphone',user_pass='$upass'";
 $connect->query($user_insert);
 header("location:home.php");
 ?>

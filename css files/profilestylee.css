@@ -136,6 +136,7 @@ nav {
     border: 2px solid #fff;
     transition: all 0.3s ease-in-out;
     margin-top: 20px;
+    cursor: pointer;
 }
 .profile-section .left a:hover{
     color: #d62828;
@@ -167,6 +168,18 @@ nav {
     font-size: 1.3rem;
     cursor: pointer;
     text-align: center;
+}
+.info-mod h4{
+    font-family: 'Roboto Slab', serif;
+    color: #03071e;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+.info-mod p{
+    font-family: 'Roboto Slab', serif;
+    color: #03071e;
+    font-weight: 400;
+    font-size: 1rem;
 }
 @media (max-width:1024px){
     .profile-section .left h2{

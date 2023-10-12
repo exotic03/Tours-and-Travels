@@ -143,13 +143,13 @@ togglebtn.addEventListener('click',()=>{
 
 let uname=document.getElementById("name");
 let email=document.getElementById("email");
-let username=document.getElementById("username");
+let phone=document.getElementById("phone");
 let pass=document.getElementById("pass");
 let cpass=document.getElementById("cpass");
 
 let nerror=document.getElementById("nerror");
 let mailerror=document.getElementById("mailerror");
-let usererror=document.getElementById("usererror");
+let phoneerror=document.getElementById("phoneerror");
 let passerror=document.getElementById("passerror");
 let cpasserror=document.getElementById("cpasserror");
 let submiterror=document.getElementById("submiterror");
@@ -193,15 +193,15 @@ function validateEmail(){
     }
 }
 
-function validateUsername(){
-    if(username.value.trim()==""){
-        usererror.innerHTML="Username can't be empty";
-        usererror.style.color="red";
+function validatePhone(){
+    if(phone.value.trim()==""){
+        phoneerror.innerHTML="Phone Number can't be empty";
+        phoneerror.style.color="red";
         return false;
     }
-    else if(username.value.trim().length<3){
-        usererror.innerHTML="username must be atleast 3 characters";
-        usererror.style.color="red";
+    else if(phone.value.trim().length<10 || phone.value.trim().length>10){
+        phoneerror.innerHTML="Enter Valid Phone Number";
+        phoneerror.style.color="red";
         return false;
     }else{
         usererror.innerHTML=`<i class="fa-regular fa-circle-check"></i>`;
@@ -228,7 +228,7 @@ function validatePassword(){
 }
 
 function validateForm(){
-    if(!validateName() || !validateEmail() || !validateUsername() || !validatePassword()){
+    if(!validateName() || !validateEmail() || !validatePhone() || !validatePassword()){
         if(pass.value.trim()===cpass.value.trim()){
             cpasserror.innerHTML="Password not match";
             cpasserror.style.color="red";
