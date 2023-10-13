@@ -21,7 +21,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 <body>
 
     <div class="main">
-        <h1>Your Packages</h1>
+        <h1>Your Travel Packages</h1>
         <div class="packages-container">
             <?php
                 $connect=mysqli_connect("localhost","root","","tour_and_travels");
@@ -38,7 +38,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
                 <h3 class="contact">Contact no. - <?php echo $result['contact_no']; ?></h3>
                 <h3 class="tnames">Traveller Names - <?php echo $result['traveller_name']; ?></h3>
                 <h3 class="tages">Traveller Ages - <?php echo $result['traveller_age']; ?></h3>
-                <a href="#" class="btn btn-danger">Edit Package</a>
+                <a href="deletepack.php?pack_id=<?php echo $result['id']; ?>" class="btn btn-danger">Cancel Package</a>
             </div>
             <?php
                 }
