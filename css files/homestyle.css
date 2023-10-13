@@ -74,24 +74,6 @@ nav {
     color: #003;
 }
 
-.main-nav .navlinks ul li .pbtn {
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 50px;
-    transition: all 0.1s ease-in;
-    text-decoration: none;
-    border: 2px solid #fff;
-}
-
-.main-nav .navlinks ul li .sbtn {
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 50px;
-    transition: all 0.1s ease-in;
-    border: 2px solid #fff;
-    text-decoration: none;
-}
-
 .toggle-btn {
     display: none;
     text-decoration: none;

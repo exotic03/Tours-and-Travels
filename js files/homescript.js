@@ -22,26 +22,11 @@ gsap.to(".links",{
         scrub:2
     }
 });
-gsap.to(".pbtn",{
-    color:"#fff",
-    backgroundColor:"#d62828",
-    border:"none",
+gsap.to(".profile i",{
+    color:"#ff9500",
     duration:0.1,
     scrollTrigger:{
-        trigger:".pbtn",
-        scroller:"body",
-        start:"top -5%",
-        end:"top -6%",
-        scrub:2
-    }
-});
-gsap.to(".sbtn",{
-    color:"#fff",
-    backgroundColor:"#f48c06",
-    border:"none",
-    duration:0.1,
-    scrollTrigger:{
-        trigger:".sbtn",
+        trigger:".profile i",
         scroller:"body",
         start:"top -5%",
         end:"top -6%",
