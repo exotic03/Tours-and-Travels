@@ -12,7 +12,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="../image assets/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="winterstyle.css">
+  <link rel="stylesheet" href="seasionalpackstyle.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Trippy - Tour and Travels</title>
@@ -34,7 +34,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
       <div href="#" class="toggle-btn" id="toggle-btn"><i class="fa-solid fa-bars"></i></div>
     </div>
   </nav>
-  <div class="header-img">
+  <div class="header-img-four">
     <h1>Winter Packages</h1>
     <form action="##" class="search-bar">
       <input type="text" name="search_data" id="search">

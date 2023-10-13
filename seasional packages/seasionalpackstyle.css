@@ -78,7 +78,7 @@ nav {
 .header-img {
     width: 100%;
     height: 600px;
-    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url("../image\ assets/valley\ slide.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url("../image\ assets/monsoonback.jpg");;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -88,8 +88,70 @@ nav {
     flex-direction: column;
 }
 
-
 .header-img h1 {
+    font-family: 'Borel', cursive;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.header-img-two {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url("../image\ assets/springback.jpg");;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header-img-two h1 {
+    font-family: 'Borel', cursive;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.header-img-three {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url("../image\ assets/summerback.jpg");;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header-img-three h1 {
+    font-family: 'Borel', cursive;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.header-img-four {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.8)), url("../image\ assets/valley\ slide.jpg");;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.header-img-four h1 {
     font-family: 'Borel', cursive;
     margin-top: 150px;
     margin-bottom: 30px;
@@ -159,6 +221,24 @@ nav {
 }
 
 .header-img form button i {
+    color: black !important;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-img-two form button i {
+    color: black !important;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-img-three form button i {
+    color: black !important;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-img-four form button i {
     color: black !important;
     font-size: 1.2rem;
     cursor: pointer;
@@ -352,6 +432,30 @@ footer .footer-links{
         font-size: 3.5rem;
     }
 
+    .header-img-two {
+        height: 500px;
+    }
+
+    .header-img-two h1 {
+        font-size: 3.5rem;
+    }
+
+    .header-img-three {
+        height: 500px;
+    }
+
+    .header-img-three h1 {
+        font-size: 3.5rem;
+    }
+
+    .header-img-four {
+        height: 500px;
+    }
+
+    .header-img-four h1 {
+        font-size: 3.5rem;
+    }
+
     .search-bar {
         width: 70%;
     }
@@ -389,6 +493,33 @@ footer .footer-links{
     }
 
     .header-img h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-img-two {
+        width: 100%;
+        height: 400px;
+    }
+
+    .header-img-two h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-img-three {
+        width: 100%;
+        height: 400px;
+    }
+
+    .header-img-three h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-img-four {
+        width: 100%;
+        height: 400px;
+    }
+
+    .header-img-four h1 {
         font-size: 2.5rem;
     }
 
@@ -457,6 +588,18 @@ footer .footer-links{
         font-size: 2rem;
     }
 
+    .header-img-two h1 {
+        font-size: 2rem;
+    }
+
+    .header-img-three h1 {
+        font-size: 2rem;
+    }
+
+    .header-img-four h1 {
+        font-size: 2rem;
+    }
+
     .search-bar {
         width: 280px;
     }
@@ -478,6 +621,18 @@ footer .footer-links{
     }
 
     .header-img form button i {
+        font-size: 0.8rem;
+    }
+
+    .header-img-two form button i {
+        font-size: 0.8rem;
+    }
+
+    .header-img-three form button i {
+        font-size: 0.8rem;
+    }
+
+    .header-img-four form button i {
         font-size: 0.8rem;
     }
 
