@@ -117,10 +117,10 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     </div>
     <div class="footer-links">
       <h3>Partners</h3>
-      <a href="#">IRCTC</a>
-      <a href="#">INDIGO</a>
-      <a href="#">UBER</a>
-      <a href="#">RED BUS</a>
+      <a href="https://www.irctc.co.in/">IRCTC</a>
+      <a href="https://www.goindigo.in/">INDIGO</a>
+      <a href="https://www.uber.com/in/en/">UBER</a>
+      <a href="https://www.redbus.in/">RED BUS</a>
     </div>
   </footer>
 
