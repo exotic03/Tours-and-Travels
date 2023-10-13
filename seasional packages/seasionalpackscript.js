@@ -22,6 +22,17 @@ gsap.to(".links",{
         scrub:2
     }
 });
+gsap.to(".profile i",{
+    color:"#ff9500",
+    duration:0.1,
+    scrollTrigger:{
+        trigger:".profile i",
+        scroller:"body",
+        start:"top -5%",
+        end:"top -6%",
+        scrub:2
+    }
+});
 
 let search=document.getElementById("search");
 let as=document.getElementById("animatesearch");

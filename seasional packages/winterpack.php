@@ -64,7 +64,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
               <h4 class="product-title"><?php echo $data['package_name']?></h4>
               <p class="product-places"><?php echo $data['location'] ?></p>
               <p class="product-price">₹ <?php echo $data['package_price'] ?></p>
-              <a class="product-btn" href="../bookingpage.php?id=<?php echo $line['id'];?>">View Deatils</a>
+              <a class="product-btn" href="../bookingpage.php?id=<?php echo $line['id'];?>">View Details</a>
             </div>
           </div>
           <?php
@@ -89,7 +89,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         <h4 class="product-title"><?php echo $line['package_name']?></h4>
         <p class="product-places"><?php echo $line['location'] ?></p>
         <p class="product-price">₹ <?php echo $line['package_price'] ?></p>
-        <a class="product-btn" href="../bookingpage.php?id=<?php echo $line['id'];?>">View Deatils</a>
+        <a class="product-btn" href="../bookingpage.php?id=<?php echo $line['id'];?>">View Details</a>
       </div>
     </div>
     <?php
