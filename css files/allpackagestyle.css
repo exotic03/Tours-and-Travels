@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto+Slab:wght@400;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fff;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+}
+
+.main-nav {
+    width: 90%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+    border-radius: 50px;
+}
+
+.main-nav img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.main-nav .navlinks ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.main-nav .navlinks ul li {
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+.main-nav .navlinks ul li .links {
+    text-decoration: none;
+    color: #003;
+    transition: all 0.1s ease-in-out;
+}
+
+.main-nav .navlinks ul li .links:hover {
+    border-bottom: 1px solid #ff9500;
+}
+
+.main-nav .navlinks ul li .profile i {
+    font-size: 1.5rem;
+    color: #003;
+    transition: all 0.3s ease-in;
+}
+
+.main-nav .navlinks ul li .profile i:hover {
+    color: #003;
+}
+
+.toggle-btn {
+    display: none;
+    text-decoration: none;
+}
+
+.main-nav .toggle-btn i {
+    font-size: 2.2rem;
+    color: #d62828;
+}
+
+.product-section{
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.search-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#search-bar {
+    background: #fff;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 10px #ccc;
+}
+
+#search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: 0;
+    width: 750px;
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    color: #011627;
+    border-radius: 50px;
+}
+#search-bar input::placeholder{
+    color: #ff9500;
+    font-size: 1.8rem;
+    font-family: 'Borel', cursive;
+}
+
+#search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #ff9500;
+    cursor: pointer;
+}
+
+#search-bar button i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+#head{
+    color: #03071e;
+    font-family: 'Borel', cursive;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.9rem;
+    text-decoration: underline;
+}
+
+.all-products{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.all-products .cards{
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 20px 10px 10px 10px ;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 10px 0px 20px #ccc,-10px 0px 20px  #ccc;
+    cursor: pointer;
+}
+.all-products .cards img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.all-products .cards .card-text{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #03071e;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+.all-products .cards:hover img{
+    transform: translateY(-10px);
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #03071e;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer h1{
+    font-family: 'Borel', cursive;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #e85d04;
+}
+footer .footer-links{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+    color: #e85d04;
+}
+.footer-links a{
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: center;
+}
+@media (max-width:907px){
+    .toggle-btn{
+        display: block;
+    }
+    .main-nav .toggle-btn i{
+        margin-right: 20px;
+    }
+    .navlinks{
+        position: absolute;
+        background-color: #eae2b7;
+        left: -110%;
+        top: 110%;
+        width: 100%;
+        padding-block: 30px;
+        transition: 0.2s ease-in-out;
+        z-index: 100;
+        border-radius: 10px;
+    }
+    .navlinks.active{
+        left: 0;
+    }
+    .main-nav .navlinks ul{
+        flex-direction: column;
+        gap: 40px;
+    }
+    #search-bar{
+        width: 650px;
+    }
+    #head{
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px){
+    footer h1{
+        font-size: 1.8rem;
+    }
+    .footer-links h3{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:658px){
+    #search-bar{
+        width: 500px;
+    }
+    footer{
+        height: 650px;
+        flex-direction: column;
+    }
+    footer h1{
+        margin-top: 40px;
+    }
+}
+@media (max-width:518px){
+    #search-bar{
+        width: 400px;
+    }
+    #head{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:401px){
+    #search-bar{
+        width: 300px;
+    }
+    #search-bar input{
+        font-size: 1rem;
+    }
+    #search-bar input::placeholder{
+        font-size: 1rem;
+    }
+    #search-bar button{
+        width: 40px;
+        height: 40px;
+    }
+    #search-bar button i {
+        font-size: 1.5rem;
+    }
+}

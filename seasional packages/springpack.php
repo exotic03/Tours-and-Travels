@@ -26,7 +26,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         <ul>
           <li><a href="../home.php" class="links">Home</a></li>
           <li><a href="../about.html" class="links">About us</a></li>
-          <li><a href="#" class="links">Packages</a></li>
+          <li><a href="../allpackages.php" class="links">Packages</a></li>
           <li><a href="#" class="links">Offers</a></li>
           <li><a href="../user profile/profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
         </ul>
