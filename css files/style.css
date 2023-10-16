@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto+Slab:wght@400;600;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -188,9 +188,9 @@ nav {
     z-index: 9;
     color: #011627;
     position: absolute;
-    bottom: 40%;
-    left: 35%;
-    font-family: 'Roboto Slab', serif;
+    top: 5%;
+    left: 10%;
+    font-family: 'Noto Serif', serif;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -221,10 +221,10 @@ nav {
 }
 .photo-grid .two-photos .two-photo h4{
     z-index: 9;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Noto Serif', serif;
     position: absolute;
-    color: #011627;
-    top: 45%;
+    color: #f5f3f4;
+    top: 50%;
     left: 40%;
     font-size: 2rem;
     font-weight: 600;
@@ -251,9 +251,9 @@ nav {
     z-index: 9;
     color: #011627;
     position: absolute;
-    bottom: 40%;
-    left: 33%;
-    font-family: 'Roboto Slab', serif;
+    bottom: 5%;
+    right: 15%;
+    font-family: 'Noto Serif', serif;
     font-size: 2rem;
     font-weight: 600;
 }

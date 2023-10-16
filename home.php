@@ -283,7 +283,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         <div class="pic-right">
             <h1>Could not find your dream package ?</h1>
             <p>Explore all packages here</p>
-            <a href="#">Explore</a>
+            <a href="allpackages.php">Explore</a>
         </div>
     </div>
 
