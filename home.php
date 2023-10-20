@@ -86,7 +86,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     </div>
 
     <div class="search-section">
-        <form action="#" id="search-bar">
+        <form action="searchpack.php" id="search-bar">
             <input type="text" placeholder="Search Travel Packages">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
