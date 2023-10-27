@@ -138,7 +138,7 @@ nav {
     overflow: hidden;
     background: #f8f7ff;
     width: 400px;
-    height: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +181,7 @@ nav {
     color: #03071e;
     font-weight: 400;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-right: 30px;
     margin-top: 3px;
 }
@@ -190,7 +190,7 @@ nav {
     color: #03071e;
     font-weight: 600;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-left: 20px;
 }
 
@@ -363,11 +363,9 @@ footer .footer-links{
     .products img{
         width: 250px;
     }
-    .title-duration .duration{
-        font-size: 1rem;
-    }
+
     .products .product-info .title-duration .product-title {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     
     .products .product-info .product-places {

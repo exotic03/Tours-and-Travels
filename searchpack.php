@@ -39,47 +39,70 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         <h1>Best Tour and Travel Packages</h1>
     </div>
 
-    <h1 id="head">Top results regarding " kashmir "</h1>
+    <?php
+        $connect=mysqli_connect("localhost","root","","tour_and_travels");
+        if(isset($_GET['search'])){
+        $search_value=$_GET['search_data'];
+        $sel="SELECT * FROM package_info where package_name LIKE '%$search_value%'";
+        $result=mysqli_query($connect,$sel);?>
+
+    <h1 id="head">Top results regarding " <?php echo $search_value ?> "</h1>
 
     <div class="all-products">
+          <?php
+              if(mysqli_num_rows($result)>0){
+              foreach($result as $data){
+          ?>
         <div class="products">
-            <img src="image assets/amritsar.jpg">
+            <img src="admin/package images/<?php echo $data['package_image']; ?>">
             <div class="product-info">
                 <div class="title-duration">
-                    <h4 class="product-title">kashmir</h4>
+                    <h4 class="product-title"><?php echo $data['package_name']?></h4>
                     <h4 class="duration">3 Days 4 nights</h4>
                 </div>
-                <p class="product-places">jkdhfjhdwflj;</p>
-                <p class="product-price">₹ 16000 /- per person</p>
-                <a class="product-btn" href="../bookingpage.php?id=<?php echo $line['id'];?>">View Details</a>
+                <p class="product-places"><?php echo $data['location'] ?></p>
+                <p class="product-price">₹ <?php echo $data['package_price'] ?> /- per person</p>
+                <a class="product-btn" href="bookingpage.php?id=<?php echo $data['id'];?>">View Details</a>
             </div>
         </div>
+        <?php
+        }
+      }else{
+        ?>
+          <h3 class="danger">No Package Found</h3>                         
+        <?php
+      }
+      ?>
     </div>
+    <?php
+      }
+      ?>
+    
 
     <footer>
         <h1>Trippy</h1>
         <div class="footer-links">
-          <h3>Support</h3>
-          <a href="#">About Us</a>
-          <a href="#">Contact Us</a>
-          <a href="#">Help Center</a>
-          <a href="#">Call Center</a>
+            <h3>Support</h3>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Help Center</a>
+            <a href="#">Call Center</a>
         </div>
         <div class="footer-links">
-          <h3>Services</h3>
-          <a href="#">Hotels</a>
-          <a href="#">Trains</a>
-          <a href="#">Flights</a>
-          <a href="#">Cars</a>
+            <h3>Services</h3>
+            <a href="#">Hotels</a>
+            <a href="#">Trains</a>
+            <a href="#">Flights</a>
+            <a href="#">Cars</a>
         </div>
         <div class="footer-links">
-          <h3>Partners</h3>
-          <a href="#">IRCTC</a>
-          <a href="#">INDIGO</a>
-          <a href="#">UBER</a>
-          <a href="#">RED BUS</a>
+            <h3>Partners</h3>
+            <a href="https://www.irctc.co.in/">IRCTC</a>
+            <a href="https://www.goindigo.in/">INDIGO</a>
+            <a href="https://www.uber.com/in/en/">UBER</a>
+            <a href="https://www.redbus.in/">RED BUS</a>
         </div>
-      </footer>
+    </footer>
     
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
         integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
