@@ -27,7 +27,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
                 <ul>
                     <li><a href="home.php" class="links">Home</a></li>
                     <li><a href="about.html" class="links">About us</a></li>
-                    <li><a href="#" class="links">Packages</a></li>
+                    <li><a href="allpackages.php" class="links">Packages</a></li>
                     <li><a href="#" class="links">Offers</a></li>
                     <li><a href="user profile/profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
                 </ul>
@@ -38,9 +38,9 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 
     <div class="product-section">
         <div class="search-section">
-            <form action="#" id="search-bar">
-                <input type="text" placeholder="Search Travel Packages">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <form action="searchpack.php" id="search-bar" method="GET">
+                <input type="text" placeholder="Search Travel Packages" name="search_data">
+                <button type="submit" name='search'><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
 
