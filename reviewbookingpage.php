@@ -25,7 +25,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
                 <img src="image assets/logo.png" alt="">
                 <a href="home.php" id="homelink">Tour And Travels</a>
             </div>
-            <li><a href="profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="user profile/profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
         </div>
     </nav>
 
