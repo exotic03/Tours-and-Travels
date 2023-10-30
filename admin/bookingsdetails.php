@@ -74,6 +74,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
               <th scope="col">Travellers Name</th>
               <th scope="col">Travellers Age</th>
               <th scope="col">User ID</th>
+              <th scope="col">Payment ID</th>
             </tr>
           </thead>
           <tbody>
@@ -92,6 +93,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
               <td><?php echo $line['traveller_name'] ?></td>
               <td><?php echo $line['traveller_age'] ?></td>
               <td><?php echo $line['user_id'] ?></td>
+              <td><?php echo $line['payment_id'] ?></td>
             </tr>
             <?php
             } ?>
