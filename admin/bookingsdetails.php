@@ -66,6 +66,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
         <table class="table table-success table-striped">
           <thead>
             <tr>
+              <th scope="col">Package ID</th>
               <th scope="col">Package Name</th>
               <th scope="col">Package Price</th>
               <th scope="col">Tourist Number</th>
@@ -85,6 +86,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
             while($line=$res->fetch_assoc()){
             ?>
             <tr>
+            <td><?php echo $line['id'] ?></td>
               <td><?php echo $line['package_name'] ?></td>
               <td><?php echo $line['package_price'] ?></td>
               <td><?php echo $line['tourist_number'] ?></td>
