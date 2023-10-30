@@ -70,49 +70,45 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-<script>
+    <script>
 
-    $("#bookpck").click(function(){
-        var amount=$(this).attr('data-amount');
-        var packageName=$(this).attr('data-packagename');
-        var packageId=$(this).attr('data-packageid');
+        $("#bookpck").click(function(){
+            var amount=$(this).attr('data-amount');
+            var packageName=$(this).attr('data-packagename');
+            var packageId=$(this).attr('data-packageid');
 
-var options = {
-    "key": "rzp_test_Gl1fZKrWBy2OPS", // Enter the Key ID generated from the Dashboard
-    "amount": amount*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "INR",
-    "name": "Trippy",
-    "description": packageName,
-    "image": "https://example.com/your_logo",
-    "handler": function (response){
-        var paymentId=response.razorpay_payment_id;
+        var options = {
+            "key": "rzp_test_Gl1fZKrWBy2OPS", // Enter the Key ID generated from the Dashboard
+            "amount": amount*100, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+            "currency": "INR",
+            "name": "Trippy",
+            "description": packageName,
+            "image": "https://example.com/your_logo",
+            "handler": function (response){
+            var paymentId=response.razorpay_payment_id;
 
-        $.ajax({
-            url:"order_details.php",
-            type:"POST",
-            data:{
-                package_id:packageId,
-                payment_id:paymentId
+                $.ajax({
+                url:"order_details.php",
+                type:"POST",
+                data:{
+                    package_id:packageId,
+                    payment_id:paymentId
+                },
+                success:function(finalResponse){
+                    if(finalResponse=='done'){
+                        window.location="http://localhost/Tours_and_Travels/success.php";
+                    }
+                }   
+                });
             },
-            success:function(finalResponse){
-                if(finalResponse=='done'){
-                    window.location.href="http://localhost/Tours_and_Travels/home.php";
-                }
-                // else{
-                //     alert('Please check console to find error');
-                //     console.log(finalResponse);
-                // }
-            }
-        })
-    },
-    "theme": {
-        "color": "#3399cc"
-    }
-};
-var rzp1 = new Razorpay(options);
-rzp1.open();
-e.preventDefault();
-})
+            "theme": {
+            "color": "#3399cc"
+        }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+    // e.preventDefault();
+    });
 </script>
 </body>
 

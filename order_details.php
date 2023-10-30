@@ -3,13 +3,11 @@ session_start();
 $connect=mysqli_connect("localhost","root","","tour_and_travels");
 $paymentid=$_POST['payment_id'];
 $id=$_POST["package_id"];
-echo $id;
 $user=$_SESSION['userid'];
 $sel="SELECT * FROM user_table WHERE id='$user'";
 $res=$connect->query($sel);
 $data=$res->fetch_assoc();
 $userid=$data['id'];
-echo $userid;
 $selpack="SELECT * FROM package_info WHERE id='$id'";
 $result=$connect->query($selpack);
 $packdata=$result->fetch_assoc();
@@ -25,9 +23,6 @@ $insert="INSERT INTO bookings_info SET package_name='$package_name',package_pric
 $succres=$connect->query($insert);
 if($succres){
     echo 'done';
+    $_SESSION['paymentid']=$paymentid;
 }
-else{
-    echo "Error: " . $sql . "<br>" . $connect->error;
-}
-// header("location:home.php");
 ?>
