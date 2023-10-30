@@ -52,11 +52,11 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
                 <h4>Fare Details :</h4>
                 <div class="line"></div>
                 <div class="pprice">
-                    <h5>Package Price</h5>
+                    <h5>Package Price : </h5>
                     <p>₹ <?php echo $data['package_price']; ?>/- per person</p>
                 </div>
                 <div class="pprice">
-                    <h5>Total Package Price</h5>
+                    <h5>Total Package Price : </h5>
                     <p>₹ <?php echo $total_price?> /-</p>
                 </div>
             </div>

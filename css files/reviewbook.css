@@ -58,15 +58,14 @@ li{
 }
 #main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .section{
-    width: 60%;
-    height: 70%;
+    width: 80%;
     background-color: #fff;
     border-radius: 10px;
     display: flex;
@@ -94,7 +93,10 @@ li{
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+}
+.section .package-info .details i{
+    margin-right: 10px;
 }
 .section .payment-info{
     width: 100%;
@@ -118,7 +120,7 @@ li{
 }
 .section .payment-info .pprice{
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -146,4 +148,48 @@ li{
     border-radius: 10px;
     color: #003;
     font-weight: 600;
+}
+@media (max-width:1050px){
+    .section .package-info .details{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:760px){
+    .pprice h5{
+        font-size: 1rem;
+    }
+    .pprice p{
+        font-size: 1rem;
+    }
+}
+@media (max-width:640px){
+    #main{
+        height: fit-content;
+    }
+    .section{
+        margin-top: 100px;
+    }
+    .section .package-info{
+        flex-direction: column;
+    }
+    .section .payment-info .pprice{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+@media (max-width:410px){
+    .section .package-info .details{
+        font-size: 0.8rem;
+    }
+    .section .payment-info h4{ 
+        font-size: 0.9rem;
+    }
+    .pprice h5{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .pprice p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
 }
