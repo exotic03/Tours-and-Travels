@@ -33,7 +33,7 @@
     <div id="main">
         <div id="form-container">
             <h1>Contact Us</h1>
-            <form onsubmit="sendEmail()">
+            <form onsubmit="sendEmail(); reset(); return false;">
                 <div class="row mb-3">
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="name" placeholder="Enter your name">
@@ -74,9 +74,9 @@
         function sendEmail() {
             Email.send({
                 Host: "smtp.gmail.com",
-                Username: "saha83787@gmail.com",
+                Username: "trippytour23@gmail.com",
                 Password: "trippy2023@",
-                To: 'saha83787@gmail.com',
+                To: 'trippytour23@gmail.com',
                 From: document.getElementById("email").value,
                 Subject: "New Contact Form Enquiry",
                 Body: "Name : "+document.getElementById("name").value
