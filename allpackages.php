@@ -53,10 +53,15 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
                 $result=$connect->query($select);
                 while($data=$result->fetch_assoc()){
             ?>
-            <a class="cards" href="bookingpage.php?id=<?php echo $data['id'];?>">
-                <img src="admin/package images/<?php echo $data['package_image']; ?>">
-                <p class="card-text"><?php echo $data['package_name']; ?></p>
-            </a>
+            <div class="cards">
+                <img src="admin/package images/<?php echo $data['package_image']; ?>" alt="">
+                <div class="p-container"></div>
+                <h1 class="p-title"><?php echo $data['package_name']?></h1>
+                <h2 class="duration"><?php echo $data['day']?> Days <?php echo $data['night']?> Nights</h2>
+                <p class="places"><?php echo $data['location'] ?></p>
+                <p class="price">₹ <?php echo $data['package_price'] ?> /- per person</p>
+                <a class="product-btn" href="bookingpage.php?id=<?php echo $data['id'];?>">View Details</a>
+            </div>
             <?php
                 }
             ?>

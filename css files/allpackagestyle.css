@@ -16,12 +16,13 @@ body {
     background-color: #fff;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: block;
     width: 8px;
     background-color: #f5f3f4;
 }
-body::-webkit-scrollbar-thumb{
+
+body::-webkit-scrollbar-thumb {
     background-color: #f77f00;
     border-radius: 50px;
 }
@@ -96,7 +97,7 @@ nav {
     color: #d62828;
 }
 
-.product-section{
+.product-section {
     width: 100%;
     padding-top: 90px;
     display: flex;
@@ -135,7 +136,8 @@ nav {
     color: #011627;
     border-radius: 50px;
 }
-#search-bar input::placeholder{
+
+#search-bar input::placeholder {
     color: #ff9500;
     font-size: 1.8rem;
     font-family: 'Borel', cursive;
@@ -155,7 +157,7 @@ nav {
     color: #fff;
 }
 
-#head{
+#head {
     color: #03071e;
     font-family: 'Borel', cursive;
     text-align: center;
@@ -164,7 +166,7 @@ nav {
     text-decoration: underline;
 }
 
-.all-products{
+.all-products {
     width: 100%;
     display: flex;
     align-items: center;
@@ -173,7 +175,7 @@ nav {
     gap: 30px;
 }
 
-.all-products .cards{
+/* .all-products .cards{
     width: 250px;
     height: 300px;
     display: flex;
@@ -205,8 +207,115 @@ nav {
 }
 .all-products .cards:hover img{
     transform: translateY(-10px);
+} */
+.cards {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 10px 0px 20px #ccc, -10px 0px 20px #ccc;
+    border-radius: 10px;
+    margin-block: 20px;
+    position: relative;
 }
-footer{
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.p-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.5));
+}
+
+.p-title {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    padding: 5px 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+.duration {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    padding: 5px 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+.places {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    padding: 5px 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+.price {
+    position: absolute;
+    top: 54%;
+    left: 5%;
+    padding: 5px 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+}
+
+.product-btn {
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    bottom: 8%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #f8f7ff;
+    border-radius: 10px;
+    color: #003;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in;
+}
+
+.product-btn:hover {
+    background-color: #90e0ef;
+    bottom: 9%;
+}
+
+footer {
     width: 100%;
     height: 400px;
     background-color: #03071e;
@@ -215,37 +324,44 @@ footer{
     justify-content: space-evenly;
     align-items: center;
 }
-footer h1{
+
+footer h1 {
     font-family: 'Borel', cursive;
     font-size: 3rem;
     font-weight: 600;
     color: #e85d04;
 }
-footer .footer-links{
+
+footer .footer-links {
     display: flex;
     flex-direction: column;
 }
-.footer-links h3{
+
+.footer-links h3 {
     font-size: 1.8rem;
     font-weight: 600;
     font-family: 'Roboto Slab', serif;
     color: #e85d04;
 }
-.footer-links a{
+
+.footer-links a {
     font-family: 'Roboto Slab', serif;
     text-decoration: none;
     font-size: 1.3rem;
     color: #fff;
     text-align: center;
 }
-@media (max-width:907px){
-    .toggle-btn{
+
+@media (max-width:907px) {
+    .toggle-btn {
         display: block;
     }
-    .main-nav .toggle-btn i{
+
+    .main-nav .toggle-btn i {
         margin-right: 20px;
     }
-    .navlinks{
+
+    .navlinks {
         position: absolute;
         background-color: #eae2b7;
         left: -110%;
@@ -256,63 +372,125 @@ footer .footer-links{
         z-index: 100;
         border-radius: 10px;
     }
-    .navlinks.active{
+
+    .navlinks.active {
         left: 0;
     }
-    .main-nav .navlinks ul{
+
+    .main-nav .navlinks ul {
         flex-direction: column;
         gap: 40px;
     }
-    #search-bar{
+
+    #search-bar {
         width: 650px;
     }
-    #head{
+
+    #head {
         font-size: 2rem;
     }
 }
-@media (max-width:768px){
-    footer h1{
+
+@media (max-width:768px) {
+    footer h1 {
         font-size: 1.8rem;
     }
-    .footer-links h3{
+
+    .footer-links h3 {
         font-size: 1.5rem;
     }
 }
-@media (max-width:658px){
-    #search-bar{
+
+@media (max-width:658px) {
+    #search-bar {
         width: 500px;
     }
-    footer{
+
+    footer {
         height: 650px;
         flex-direction: column;
     }
-    footer h1{
+
+    footer h1 {
         margin-top: 40px;
     }
 }
-@media (max-width:518px){
-    #search-bar{
+
+@media (max-width:518px) {
+    #search-bar {
         width: 400px;
     }
-    #head{
+
+    #head {
         font-size: 1.5rem;
     }
 }
-@media (max-width:401px){
-    #search-bar{
+
+@media (max-width:425px) {
+    .main-nav img {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .header-img {
+        height: 300px;
+    }
+
+    .header-img h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        width: 350px;
+    }
+
+    .p-title {
+        font-size: 1rem;
+    }
+
+    .duration {
+        font-size: 1rem;
+    }
+
+    .places {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1rem;
+        top: 60%;
+    }
+}
+
+@media (max-width:401px) {
+    #search-bar {
         width: 300px;
     }
-    #search-bar input{
+
+    #search-bar input {
         font-size: 1rem;
     }
-    #search-bar input::placeholder{
+
+    #search-bar input::placeholder {
         font-size: 1rem;
     }
-    #search-bar button{
+
+    #search-bar button {
         width: 40px;
         height: 40px;
     }
+
     #search-bar button i {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width:320px) {
+    .main-nav .toggle-btn i {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        width: 300px;
     }
 }
