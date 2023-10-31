@@ -153,19 +153,19 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <h1 class="package-heads">Top Destination Packages</h1>
 
     <div class="card-container">
-        <a class="cards c2" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c2" href="specialpackages.php?name=kashmir">
             <img src="image assets/khasmir pic3.jpg">
             <p class="card-text">kashmir</p>
         </a>
-        <a class="cards c2" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c2" href="specialpackages.php?name=shimla">
             <img src="image assets/shimla.jpg">
             <p class="card-text">Shimla</p>
         </a>
-        <a class="cards c2" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c2" href="specialpackages.php?name=goa">
             <img src="image assets/goa.jpg">
             <p class="card-text">Goa</p>
         </a>
-        <a class="cards c2" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c2" href="specialpackages.php?name=jaipur">
             <img src="image assets/jaipur.jpg">
             <p class="card-text">Jaipur</p>
         </a>
@@ -174,19 +174,19 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <h1 class="package-heads">Top Adventure Destination Packages</h1>
 
     <div class="card-container">
-        <a class="cards c3" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c3" href="specialpackages.php?name=ladakh">
             <img src="image assets/leh pic.jpg">
             <p class="card-text">Leh ladakh</p>
         </a>
-        <a class="cards c3" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c3" href="specialpackages.php?name=manali">
             <img src="image assets/manali pic.jpg">
             <p class="card-text">Manali</p>
         </a>
-        <a class="cards c3" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c3" href="specialpackages.php?name=rishikesh">
             <img src="image assets/rafting.jpg">
             <p class="card-text">Rishikesh</p>
         </a>
-        <a class="cards c3" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c3" href="specialpackages.php?name=andaman">
             <img src="image assets/scuba diving.jpg">
             <p class="card-text">Andaman</p>
         </a>
@@ -195,19 +195,19 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <h1 class="package-heads">Top Religious Destination Packages</h1>
 
     <div class="card-container">
-        <a class="cards c4" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c4" href="specialpackages.php?name=varanasi">
             <img src="image assets/varanasi.jpg">
             <p class="card-text">Varanasi</p>
         </a>
-        <a class="cards c4" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c4" href="specialpackages.php?name=kedarnath">
             <img src="image assets/kedarnath.webp">
             <p class="card-text">Kedarnath</p>
         </a>
-        <a class="cards c4" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c4" href="specialpackages.php?name=haridwar">
             <img src="image assets/haridwar.jpg">
             <p class="card-text">Haridwar</p>
         </a>
-        <a class="cards c4" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c4" href="specialpackages.php?name=amritsar">
             <img src="image assets/amritsar.jpg">
             <p class="card-text">Amritsar</p>
         </a>
@@ -216,19 +216,19 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <h1 class="package-heads">Top Wildlife Destination Packages</h1>
 
     <div class="card-container">
-        <a class="cards c5" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c5" href="specialpackages.php?name=corbet">
             <img src="image assets/jim corbet.jpg">
             <p class="card-text">Jim corbet</p>
         </a>
-        <a class="cards c5" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c5" href="specialpackages.php?name=kaziranga">
             <img src="image assets/kaziranga.jpg">
             <p class="card-text">Kaziranga</p>
         </a>
-        <a class="cards c5" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c5" href="specialpackages.php?name=gir">
             <img src="image assets/gir national park.jpg">
             <p class="card-text">Gir National Park</p>
         </a>
-        <a class="cards c5" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c5" href="specialpackages.php?name=sundarban">
             <img src="image assets/sundarban.jpg">
             <p class="card-text">Sundarban</p>
         </a>
@@ -237,19 +237,19 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <h1 class="package-heads">Top South India Destination Packages</h1>
 
     <div class="card-container">
-        <a class="cards c6" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c6" href="specialpackages.php?name=puducherry">
             <img src="image assets/pondicherry.jpg">
             <p class="card-text">Puducherry</p>
         </a>
-        <a class="cards c6" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c6" href="specialpackages.php?name=karnataka">
             <img src="image assets/karnataka.jpg">
             <p class="card-text">Karnataka</p>
         </a>
-        <a class="cards c6" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c6" href="specialpackages.php?name=kerala">
             <img src="image assets/kerala 2.jpg">
             <p class="card-text">Kerala</p>
         </a>
-        <a class="cards c6" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c6" href="specialpackages.php?name=tamilnadu">
             <img src="image assets/tamilnadu.jpg">
             <p class="card-text">Tamilnadu</p>
         </a>
@@ -258,19 +258,19 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     <h1 class="package-heads">Top North East India Destination Packages</h1>
 
     <div class="card-container">
-        <a class="cards c7" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c7" href="specialpackages.php?name=darjeeling">
             <img src="image assets/darjeeling pic 1.jpg">
             <p class="card-text">Darjeeling</p>
         </a>
-        <a class="cards c7" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c7" href="specialpackages.php?name=meghalaya">
             <img src="image assets/meghalaya.jpg">
             <p class="card-text">Meghalaya</p>
         </a>
-        <a class="cards c7" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c7" href="specialpackages.php?name=gangtok">
             <img src="image assets/gangtok.jpg">
             <p class="card-text">Gangtok</p>
         </a>
-        <a class="cards c7" data-bs-toggle="modal" data-bs-target="#loginsection">
+        <a class="cards c7" href="specialpackages.php?name=shillong">
             <img src="image assets/shillong.jpg">
             <p class="card-text">Shillong</p>
         </a>
