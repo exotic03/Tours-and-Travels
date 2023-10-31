@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Roboto+Slab:wght@400;600;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #eae2b7 !important;
+}
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 8px;
+    background-color: #f5f3f4;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #f77f00;
+    border-radius: 50px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: fixed;
+}
+
+.main-nav {
+    width: 90%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 25px;
+    border-radius: 50px;
+}
+
+.main-nav img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.main-nav .navlinks ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 15px;
+    list-style: none;
+}
+
+.main-nav .navlinks ul li {
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+.main-nav .navlinks ul li .links {
+    text-decoration: none;
+    color: #003;
+    transition: all 0.1s ease-in-out;
+}
+
+.main-nav .navlinks ul li .links:hover {
+    border-bottom: 1px solid #ff9500;
+}
+
+.main-nav .navlinks ul li .profile i {
+    font-size: 1.5rem;
+    color: #003;
+    transition: all 0.3s ease-in;
+}
+.main-nav .navlinks ul li .profile i:hover{
+    color: #003;
+}
+
+.toggle-btn {
+    display: none;
+    text-decoration: none;
+}
+
+.main-nav .toggle-btn i {
+    font-size: 2.2rem;
+    color: #d62828;
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 85px;
+}
+#form-container{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#form-container h1{
+    font-family: 'Roboto Slab', serif;
+    color: #003;
+    font-weight: 600;
+    text-align: left;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 15px;
+    border: 1px solid black;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 10px;
+}
+#mail{
+    font-size: 1rem;
+}
+#contact-ph{
+    font-size: 1rem;
+}
+@media (max-width:900px) {
+    .toggle-btn{
+        display: block;
+    }
+    .main-nav .toggle-btn i{
+        margin-right: 20px;
+    }
+    .navlinks{
+        position: absolute;
+        background-color: #eae2b7;
+        left: -110%;
+        top: 110%;
+        width: 100%;
+        padding-block: 30px;
+        transition: 0.2s ease-in-out;
+        z-index: 100;
+        border-radius: 10px;
+    }
+    .navlinks.active{
+        left: 0;
+    }
+    .main-nav .navlinks ul{
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+@media (max-width:600px){
+    .contact{
+        flex-direction: column;
+        text-align: center;
+    }
+}

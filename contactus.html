@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css files/contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav">
+            <div class="logo">
+                <img src="image assets/logo.png" alt="">
+            </div>
+            <div class="navlinks" id="navlinks">
+                <ul>
+                    <li><a href="home.php" class="links">Home</a></li>
+                    <li><a href="about.html" class="links">About us</a></li>
+                    <li><a href="allpackages.php" class="links">Packages</a></li>
+                    <li><a href="#" class="links">Offers</a></li>
+                    <li><a href="user profile/profile.php" class="profile"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+            <div href="#" class="toggle-btn" id="toggle-btn"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <div id="main">
+        <div id="form-container">
+            <h1>Contact Us</h1>
+            <form onsubmit="sendEmail()">
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-10">
+                        <textarea name="desc" id="desc" cols="30" rows="5" placeholder="Enter your message"
+                            style="border: none; outline: none; padding-left: 10px; padding-top: 10px;"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-dark" style="font-family: 'Roboto Slab', serif;">Send
+                    Message</button>
+            </form>
+            <div class="contact">
+                <h2 id="mail">Email Address - trippytour23@gmail.com</h2>
+                <h2 id="contact-ph">Phone Number - 7501873863</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e04331d407.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "saha83787@gmail.com",
+                Password: "trippy2023@",
+                To: 'saha83787@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "Name : "+document.getElementById("name").value
+                    +"<br> Email : "+document.getElementById("email").value
+                    +"<br> Phone no : "+document.getElementById("phone").value
+                    +"<br> Message : "+document.getElementById("desc").value
+            }).then(
+                message => alert("Message Sent Succesfully")
+            );
+        }
+    </script>
+</body>
+
+</html>
