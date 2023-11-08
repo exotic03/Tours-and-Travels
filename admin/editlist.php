@@ -60,7 +60,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
 
                 <form action="updatepackage.php" method="post" enctype="multipart/form-data">
                     <input type="hidden" name="editid" value="<?php echo $line['id'] ?>">
-                    <h2>Fill package Details</h2>
+                    <h2>Edit package Details</h2>
                     <label for="Package Name">Package Name</label>
                     <p><input type="text" name="pname" placeholder="Enter package name" required class="form-control" value="<?php echo $line['package_name'] ?>"></p>
                     <label for="Package Price">Package Price</label>
