@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connect=mysqli_connect("localhost","root","","tour_and_travels");
+include("../admin/database.php");
 $name=$_POST['name'];
 $phone=$_POST['phn'];
 $email=$_POST['email'];

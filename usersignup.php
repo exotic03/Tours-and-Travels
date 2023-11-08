@@ -1,5 +1,5 @@
 <?php
-$connect=mysqli_connect("localhost","root","","tour_and_travels");
+include("../admin/database.php");
 $uname=$_POST['name'];
 $uemail=$_POST['email'];
 $userphone=$_POST['phone'];

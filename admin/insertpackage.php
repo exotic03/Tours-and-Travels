@@ -1,5 +1,5 @@
 <?php
-$connect=mysqli_connect("localhost","root","","tour_and_travels");
+include("database.php");
 $pname=$_POST["pname"];
 $price=$_POST["price"];
 $day=$_POST["day"];

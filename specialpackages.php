@@ -31,7 +31,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         </div>
     </nav>
     <?php
-        $connect=mysqli_connect("localhost","root","","tour_and_travels");
+        include("../admin/database.php");
         $name=$_GET['name'];
         $sel="SELECT * FROM package_info WHERE package_name LIKE '%$name%'";
         $result=mysqli_query($connect,$sel);

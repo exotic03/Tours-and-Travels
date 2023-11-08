@@ -24,7 +24,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         <h1>Your Travel Packages</h1>
         <div class="packages-container">
             <?php
-                $connect=mysqli_connect("localhost","root","","tour_and_travels");
+                include("../admin/database.php");
                 $id=$_GET['id'];
                 $sel="SELECT * FROM bookings_info WHERE user_id='$id'";
                 $res=$connect->query($sel);

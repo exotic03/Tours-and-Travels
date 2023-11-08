@@ -48,7 +48,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 
         <div class="all-products">
             <?php
-                $connect=mysqli_connect("localhost","root","","tour_and_travels");
+                include("admin/database.php");
                 $select="SELECT * FROM package_info";
                 $result=$connect->query($select);
                 while($data=$result->fetch_assoc()){

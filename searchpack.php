@@ -40,7 +40,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     </div>
 
     <?php
-        $connect=mysqli_connect("localhost","root","","tour_and_travels");
+        include("../admin/database.php");
         if(isset($_GET['search'])){
         $search_value=$_GET['search_data'];
         $sel="SELECT * FROM package_info where package_name LIKE '%$search_value%'";

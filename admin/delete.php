@@ -1,5 +1,5 @@
 <?php
-$connect=mysqli_connect("localhost","root","","tour_and_travels");
+include("database.php");
 $id=$_GET["id"];
 
 //delete image from server

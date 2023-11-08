@@ -52,7 +52,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
                 
                 <!-- /.container-fluid -->
                 <?php
-                $connect=mysqli_connect("localhost","root","","tour_and_travels");
+                include("database.php");
                 $packid=$_GET['id'];
                 $sel="SELECT * FROM package_info WHERE id='$packid'";
                 $res=$connect->query($sel);

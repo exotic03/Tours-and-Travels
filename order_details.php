@@ -1,6 +1,6 @@
 <?php
 session_start();
-$connect=mysqli_connect("localhost","root","","tour_and_travels");
+include("../admin/database.php");
 $paymentid=$_POST['payment_id'];
 $id=$_POST["package_id"];
 $user=$_SESSION['userid'];

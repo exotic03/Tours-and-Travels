@@ -40,7 +40,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 
     <div class="desc-header-section">
         <?php
-        $connect=mysqli_connect("localhost","root","","tour_and_travels");
+        include("../admin/database.php");
         $packid=$_GET['id'];
         $select="SELECT * FROM package_info where id='$packid'";
         $result=$connect->query($select);

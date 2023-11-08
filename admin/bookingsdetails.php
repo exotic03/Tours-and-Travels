@@ -80,7 +80,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
           </thead>
           <tbody>
             <?php
-            $connect=mysqli_connect("localhost","root","","tour_and_travels");
+            include("database.php");
             $row="SELECT * FROM bookings_info";
             $res=$connect->query($row);
             while($line=$res->fetch_assoc()){

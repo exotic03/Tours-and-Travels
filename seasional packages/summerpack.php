@@ -48,7 +48,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
 
   <h1 id="head">Summer Destinations</h1>
   <?php
-  $connect=mysqli_connect("localhost","root","","tour_and_travels");
+  include("../admin/database.php");
   if(isset($_GET['search'])){
     $search_value=$_GET['search_data'];
     $sel="SELECT * FROM package_info where classification='Summer Destination' AND package_name LIKE '%$search_value%'";
@@ -80,7 +80,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
   ?>
   <div class="all-products container">
     <?php
-            
+            include("../admin/database.php");
             $row="SELECT * FROM package_info where classification='Summer Destination'";
             $res=$connect->query($row);
             while($line=$res->fetch_assoc()){

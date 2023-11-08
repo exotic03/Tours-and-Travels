@@ -70,7 +70,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
                         </thead>
                         <tbody>
                             <?php 
-                            $connect=mysqli_connect("localhost","root","","tour_and_travels");
+                            include("database.php");
                             if(isset($_GET['search']) && ($_GET['search'])!=""){
                                 $search_value=$_GET['search'];
                                 $query="SELECT * FROM package_info WHERE CONCAT(package_name,package_price,day,night,classification,category,location) LIKE '%$search_value%'";

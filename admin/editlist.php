@@ -51,7 +51,7 @@ if($_SESSION['adminid']=="" || !isset($_SESSION['adminid'])) {
                 
                 <!-- /.container-fluid -->
                 <?php 
-                $connect=mysqli_connect("localhost","root","","tour_and_travels");
+                include("database.php");
                 $editid=$_GET['id'];
                 $select="SELECT * FROM package_info WHERE id='$editid'";
                 $res=$connect->query($select);
