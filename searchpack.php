@@ -40,7 +40,7 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
     </div>
 
     <?php
-        include("../admin/database.php");
+        include("admin/database.php");
         if(isset($_GET['search'])){
         $search_value=$_GET['search_data'];
         $sel="SELECT * FROM package_info where package_name LIKE '%$search_value%'";
@@ -83,9 +83,9 @@ if($_SESSION['userid']=="" || !isset($_SESSION['userid'])) {
         <h1>Trippy</h1>
         <div class="footer-links">
             <h3>Support</h3>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Help Center</a>
+            <a href="about.html">About Us</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="contactus.html">Help Center</a>
             <a href="#">Call Center</a>
         </div>
         <div class="footer-links">

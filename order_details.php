@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../admin/database.php");
+include("admin/database.php");
 $paymentid=$_POST['payment_id'];
 $id=$_POST["package_id"];
 $user=$_SESSION['userid'];

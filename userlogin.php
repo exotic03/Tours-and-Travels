@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("../admin/database.php");
+include("admin/database.php");
 $email=$_POST['email'];
 $userphone=$_POST['phone'];
 $pass=$_POST['pass'];
